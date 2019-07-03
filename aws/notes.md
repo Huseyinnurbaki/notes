@@ -20,4 +20,8 @@ yum install git
 
 install icin root access gerekli
 
+# Install node && npm
+
+https://www.e2enetworks.com/help/knowledge-base/how-to-install-node-js-and-npm-on-centos/
+
 
