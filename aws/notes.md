@@ -4,6 +4,12 @@
 ```sh
 sudo su -
 ```
+# Get out of Root user
+
+
+```sh
+exit
+```
 
 # Install command
 
