@@ -2,13 +2,10 @@
 
 | Technology |
 | ------ |
+| Aws |
+| Bash |
 | IOS |
-| React |
-| React Natıve |
-| Android |
-| Docker |
-| Kubernetes |
-| Cloud Native |
+| Java |
 | Spring |
 
 ---
