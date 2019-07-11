@@ -11,3 +11,15 @@ You'll need to start MySQL before you can use the mysql command on your terminal
 
 To connect run: mysql -uroot. root is the username name here
 
+# Sifre sifirlama
+
+```sh
+mysql -u root
+```
+
+
+```sh
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'newPasswd';
+```
+
+
