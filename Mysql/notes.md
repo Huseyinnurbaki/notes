@@ -21,5 +21,3 @@ mysql -u root
 ```sh
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'newPasswd';
 ```
-
-
