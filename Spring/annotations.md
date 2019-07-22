@@ -24,3 +24,28 @@ The default configuration only allows the values to be read on the client’s st
 
 
 management.security.enabled=false will disable the spring security on the management enpoints like /env, /refresh etc. This is for development settings, in production security should be enabled.
+
+
+
+------
+
+
+configleri guncelledikten sonra mikroservisleri yeniden başlatmaya gerek duymadan configleri çekmek için aşağıdaki komutları kulanıyoruz.  
+
+curl -X POST http://localhost:8080/actuator/refresh
+
+bununn için dependencylerimiz arasında actuator bulunmalı. main application içerisinde de @refreshScope anotasyonu olmalı. Örneğin
+
+![alt text](./images/refreshscope.png "refreshscope")
+
+refreshscoope un olması tamamen yeterli değil, bootstrap.properties içerisinde management.endpoints.web.exposure.include=refresh
+ekli olmalı.
+
+Bu şekilde actuator ile gelen özelliklerden refresh i kullanabiliyoruz. health vb gibi endpointler de mevcut. 
+management.endpoints.web.exposure.include=* dersek tüm enpointleri bizim için expose ediyor actuator. 
+
+actuator dokümanı
+
+-------
+https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html
+-------
