@@ -7,3 +7,11 @@ You’ll now see that a new JAR file, cloudnative-requestresponse-0.0.1-SNAPSHOT
 java -jar target/cloudnative-requestresponse-0.0.1-SNAPSHOT.jar
 ```
 Buradan sonra ilgili bir servisi terminalden curl edebiliyoruz.
+
+
+----
+
+Property file name and the Client module service name spring.application.name=config-server-client should be exactly same, otherwise, properties will not be detected. Actually, Config Server exposes the properties in an end point of property file name, if you browse URL http://localhost:8888/config-server-client/development it will return all the dev environment values.
+
+
+microservice git reposu içerisinden kendisine ait konfiürasyonları ismiyle uyuşan dosyadan alır. Yoksa bulamamz.
