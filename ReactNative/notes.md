@@ -41,3 +41,15 @@ Right-click and select Export 2 items.
 Select location to save p12 file.
 (Optional)Enter a password - this will be used to install it on the other machine.
 Press Save.
+
+*****
+
+
+Android  android/build.gradle dizininde
+
+def enableSeparateBuildPerCPUArchitecture = false
+parametresi 2 apk oluşturup oluşturmama ayrımına yarar. true verilince arm ve x86 mimarili cihaz hedef alınarak 2 apk oluşturulur. Bu sayede 4mb kadar küçülür uygulama. apk içerisine gereksiz native kod eklenmemiş olur. 2 apk store a birlikte yüklenir. google play ve amazon bu şekilde uygulamayı kabul etmektedir. insanlar indirirken otomatik olarak cihazları için hangisi uygunsa kullanıcıya o gösterilir. apk lara özgü farklı şeyler yapılamamakta. arm olanları 5 tl ye satayım, x86 ları 7 tl ye satayım gibi kurnazlıklar da yapılamamakta . :)
+
+
+
+
