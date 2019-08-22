@@ -93,3 +93,10 @@ pod cache clean 'alamofire' --all
 
 
 Pod install
+
+
+-------
+
+Android Duplicate resoursec problemi ve enteresan cozumu
+
+https://github.com/facebook/react-native/issues/22234
