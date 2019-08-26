@@ -100,3 +100,9 @@ Pod install
 Android Duplicate resoursec problemi ve enteresan cozumu
 
 https://github.com/facebook/react-native/issues/22234
+
+----------
+
+
+
+XCode build variant

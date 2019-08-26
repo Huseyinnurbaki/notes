@@ -36,5 +36,5 @@ availability keep agent online amap.
 
 node properties -> env var secebilirsin
 
-
+unchecked kalabilir.
 
