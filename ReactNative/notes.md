@@ -234,3 +234,12 @@ react native de rctwebsocket debug edebilmek için var.
 --------
 
 podfile içindeki #use_frameworks swift tabanlı podlar için var. Hem swift hem obj c podlar birarada olunca birbirine dependent kütüphaneler importları beceremiyor. Bunun çözümü ya yeni eklenen kütüphanenin en sonki obj c halini bulup eklemek, ya da obj-c bridging header da ihtiyac olunan obj c header larını import etmek. Böyle olunca headerlar swift tarafına expose ediliyor ve dependent kütüphaneler birbirini bulabiliyor.
+
+--------
+
+
+pod update yaparken smartquotes gibi bir hata alırsak cocoapods versiyonumuz eski demektir.
+
+```sh
+$ sudo gem install cocoapods
+```
