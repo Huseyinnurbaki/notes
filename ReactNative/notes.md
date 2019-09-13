@@ -243,3 +243,14 @@ pod update yaparken smartquotes gibi bir hata alırsak cocoapods versiyonumuz es
 ```sh
 $ sudo gem install cocoapods
 ```
+
+
+---------
+
+
+
+iosta birkaç environmentın derlenebldiği bir konfigürasyonunuz var. prebuild scriptlerimizle ortama özgü dosyaları ilgili alanlar kopyalıyoruz. Doğru dosyayı aldığımıza nasıl emin olabiliriz ? 
+
+xcode da appname -appname - products - apnama.app sağ klik show in finder diyoruz. 
+
+finderda app in üstüne sağ klik yapıp show package contents diyoruz. Ben kolaylık olsun diye ilgili klasöre belirleyici bir dosya ekledim
