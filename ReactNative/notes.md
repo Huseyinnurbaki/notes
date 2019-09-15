@@ -254,3 +254,11 @@ iosta birkaç environmentın derlenebldiği bir konfigürasyonunuz var. prebuild
 xcode da appname -appname - products - apnama.app sağ klik show in finder diyoruz. 
 
 finderda app in üstüne sağ klik yapıp show package contents diyoruz. Ben kolaylık olsun diye ilgili klasöre belirleyici bir dosya ekledim
+
+
+
+------------
+
+
+
+googleapis ile ilgili problem : pod update hazırda bulunan oogleapis dosylarını duzenleyebiliyor. Bu yuzden podları silipo pod install yapmak istersek googleapis için ygenellikle kullanılan post install scripti hata veriyor. (voice assistant) (ios)
