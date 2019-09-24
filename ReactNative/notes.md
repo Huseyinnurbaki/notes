@@ -262,3 +262,24 @@ finderda app in üstüne sağ klik yapıp show package contents diyoruz. Ben kol
 
 
 googleapis ile ilgili problem : pod update hazırda bulunan oogleapis dosylarını duzenleyebiliyor. Bu yuzden podları silipo pod install yapmak istersek googleapis için ygenellikle kullanılan post install scripti hata veriyor. (voice assistant) (ios)
+
+
+
+-------------
+
+
+
+Iosta telefona veya emnulatore atarken uygulamayı this device is not supported hatası için
+
+https://medium.com/swift2go/how-to-run-ios-12-on-real-device-using-xcode-9-51aa51df7c4
+
+--------
+
+
+android build sırasında debugImplementation a kızıyorsa bilgilsayarınızı ingilizce yapın
+
+http://codelama.com/androidstudio-3-3-could-not-find-method-testimplementation-error/
+
+
+
+----------

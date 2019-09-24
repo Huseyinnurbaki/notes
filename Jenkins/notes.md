@@ -38,3 +38,23 @@ node properties -> env var secebilirsin
 
 unchecked kalabilir.
 
+
+
+--------------
+
+
+Add nodes to Jenkins(jenkins slave)
+
+# of executors ->> paralel koşabilecek iş sayısı. 
+
+labels -> jobları çalıştırırken içinde ilgili label varsa o job o makinede çalıştırışacak. 
+
+
+
+-------------
+
+
+swap space
+
+Virtual memory is a combination of RAM and disk space that running processes can use. Swap space is the portion of virtual memory that is on the hard disk, used when RAM is full.
+
