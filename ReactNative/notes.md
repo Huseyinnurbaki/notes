@@ -283,3 +283,8 @@ http://codelama.com/androidstudio-3-3-could-not-find-method-testimplementation-e
 
 
 ----------
+
+
+64 bit android support files
+
+https://developer.android.com/jetpack/androidx/migrate/class-mappings
