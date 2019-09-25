@@ -58,3 +58,12 @@ swap space
 
 Virtual memory is a combination of RAM and disk space that running processes can use. Swap space is the portion of virtual memory that is on the hard disk, used when RAM is full.
 
+----
+
+cron jobs
+
+how to schedule
+
+https://www.lenar.io/jenkins-schedule-build-periodically/
+
+![alt text](./img/schedule.png "schedule format")
