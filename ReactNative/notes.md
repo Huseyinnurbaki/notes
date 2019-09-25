@@ -288,3 +288,15 @@ http://codelama.com/androidstudio-3-3-could-not-find-method-testimplementation-e
 64 bit android support files
 
 https://developer.android.com/jetpack/androidx/migrate/class-mappings
+
+-----
+
+
+> Directory '/Users/farukyazici/dev/gitlab/client/mobile-branch/android/app/build/extracted-include-protos/debug' specified for prope
+rty '$9' does not exist.
+> Directory '/Users/farukyazici/dev/gitlab/client/mobile-branch/android/app/build/extracted-include-protos/dev' specified for propert
+y '$6' does not exist.
+> Directory '/Users/farukyazici/dev/gitlab/client/mobile-branch/android/app/build/extracted-include-protos/main' specified for property '$3' does not exist.
+
+
+ilgilidizine dosyaları ekleyince çözülüyor. sebebini bilmiyorum.
