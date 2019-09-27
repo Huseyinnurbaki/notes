@@ -4,8 +4,14 @@
 | ------ |
 | Aws |
 | Bash |
-| IOS |
-| Java |
+| Docker |
+| Jenkins |
+| K8S |
+| Mysql |
+| npm |
+| Other |
+| PM |
+| RN |
 | Spring |
 
 ---
