@@ -300,3 +300,24 @@ y '$6' does not exist.
 
 
 ilgilidizine dosyaları ekleyince çözülüyor. sebebini bilmiyorum.
+
+
+-----------
+
+
+
+Ios ta build numberı otomatik arttırmak için aşağıdaki scripti build phases kısmına ekliyoruz. 
+
+
+
+```sh
+buildIdentity=$(date +%m/%d/%Y/%H:%M)-$ASSETS_ENVIRONMENTAL_VALUE;
+echo "$buildIdentity"
+/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildIdentity" "${PROJECT_DIR}/${INFOPLIST_FILE}"
+```
+
+
+https://tecadmin.net/get-current-date-and-time-in-bash/ adresinde date nasıl alınır detayları var. 
+
+Yukarıdaki kod bloğu environmentı da build versiyon içerisine basmakta. 
+
