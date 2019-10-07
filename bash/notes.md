@@ -24,3 +24,13 @@ cd /directory/with/executableFileName
 chmod +x executableFileName     # only required if your file is not already executable
 
 ./executableFileName
+
+
+
+----------
+
+prosesin koştuu portu bulup prosesi öldürme
+
+```sh
+lsof -ti:8081 | xargs kill
+```
