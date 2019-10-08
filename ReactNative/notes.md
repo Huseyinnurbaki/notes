@@ -321,3 +321,11 @@ https://tecadmin.net/get-current-date-and-time-in-bash/ adresinde date nasıl al
 
 Yukarıdaki kod bloğu environmentı da build versiyon içerisine basmakta. 
 
+
+------------
+
+https://github.com/filsv/iPhoneOSDeviceSupport
+
+xcode dan yeni ios versiyonlu cihaza uygulama atmak istediğimizde device not supported problemi için yukarıdaki linkten ihtiyaç olunan versiyon alınır. 
+
+/Users/user/Library/Developer/Xcode/iOS DeviceSupport arasına konur. Xcode u kapatıp açınca telefona atabiliyoruz.
