@@ -329,3 +329,11 @@ https://github.com/filsv/iPhoneOSDeviceSupport
 xcode dan yeni ios versiyonlu cihaza uygulama atmak istediğimizde device not supported problemi için yukarıdaki linkten ihtiyaç olunan versiyon alınır. 
 
 /Users/user/Library/Developer/Xcode/iOS DeviceSupport arasına konur. Xcode u kapatıp açınca telefona atabiliyoruz.
+
+
+------------
+Firebase crash log
+
+simulatorde veya cihazda crash logu oluştururken cihazın debugda olmaması gerekiyor.
+
+Make sure that the debugger is DISABLED when you generate the crash in the simulator or attached device, or the debugger will grab the crash before FCR does. Launch the app (⌘R) in Xcode, stop the debugger (⌘.) in Xcode, and re-launch the app manually in the simulator or on the device.
