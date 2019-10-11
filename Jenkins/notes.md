@@ -67,3 +67,74 @@ how to schedule
 https://www.lenar.io/jenkins-schedule-build-periodically/
 
 ![alt text](./img/schedule.png "schedule format")
+
+
+------------
+
+
+jenkins xcode pluginini kullanırken ios build sırasında PhaseScriptExecution
+
+hatası alındığğında sebebi ya node farklı directoryde kurulmuştur, ya da jenkins node directorysini bulamıyordur. 
+
+![alt text](./img/bundle.png "bundle")
+
+
+xcode da target seçip  build phases adımında "bundle react native code and images aşamasına gelip görseldeki yere node pathini yazıyoruz. node pathini 
+
+```sh
+which node
+```
+
+komutuyla bulabiliyoruz.
+
+muhtemelen /usr/local/bin/node directorysinde olacak. (default.)
+
+
+Aldığım hata (jenkins build log)
+
++ export NODE_ARGS=
++ NODE_ARGS=
++ '[' -z '' ']'
++ export CLI_PATH=/Users/albaraka/jenkins/workspace/Deployment_Master_UAT_IOS/node_modules/react-native/cli.js
++ CLI_PATH=/Users/albaraka/jenkins/workspace/Deployment_Master_UAT_IOS/node_modules/react-native/cli.js
++ '[' -z '' ']'
++ BUNDLE_COMMAND=bundle
++ [[ -z '' ]]
++ CONFIG_ARG=
++ type node
++ nodejs_not_found
++ echo 'error: Can'\''t find '\''node'\'' binary to build React Native bundle'
+error: Can't find 'node' binary to build React Native bundle
++ echo 'If you have non-standard nodejs installation, select your project in Xcode,'
+If you have non-standard nodejs installation, select your project in Xcode,
++ echo 'find '\''Build Phases'\'' - '\''Bundle React Native code and images'\'''
+find 'Build Phases' - 'Bundle React Native code and images'
++ echo 'and change NODE_BINARY to absolute path to your node executable'
+and change NODE_BINARY to absolute path to your node executable
++ echo '(you can find it by invoking '\''which node'\'' in the terminal)'
+(you can find it by invoking 'which node' in the terminal)
++ exit 2
+
+** ARCHIVE FAILED **
+
+The following build commands failed:
+	PhaseScriptExecution Bundle\ React\ Native\ code\ and\ images /Users/
+
+Bu bilgiye react-native modülünün içinde scriptsin altında "react-native-xcode.sh" scriptinde node bulunamayınca çağrılan hatalardan keşfettim. Script içindeki blok : (path: /node_modules/react-native/scripts/react-native-xcode.sh)
+
+
+nodejs_not_found()
+{
+  echo "error: Can't find '$NODE_BINARY' binary to build React Native bundle" >&2
+  echo "If you have non-standard nodejs installation, select your project in Xcode," >&2
+  echo "find 'Build Phases' - 'Bundle React Native code and images'" >&2
+  echo "and change NODE_BINARY to absolute path to your node executable" >&2
+  echo "(you can find it by invoking 'which node' in the terminal)" >&2
+  exit 2
+}
+
+adımlarını izleyince node u bulamama problemini çözdüm. 
+
+
+
+
