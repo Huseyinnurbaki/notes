@@ -337,3 +337,12 @@ Firebase crash log
 simulatorde veya cihazda crash logu oluştururken cihazın debugda olmaması gerekiyor.
 
 Make sure that the debugger is DISABLED when you generate the crash in the simulator or attached device, or the debugger will grab the crash before FCR does. Launch the app (⌘R) in Xcode, stop the debugger (⌘.) in Xcode, and re-launch the app manually in the simulator or on the device.
+
+
+-----------
+
+Ios ta paket çıkarken 
+
+error exportarchive no profiles for 'app' ....
+
+hatası alınıyorsa xcode u kapatıp açınca düzeliyor. (window-->organizer adımından gidince tekrar paket yükleme ekranı açılır. )
