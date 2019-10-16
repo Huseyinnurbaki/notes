@@ -346,3 +346,13 @@ Ios ta paket çıkarken
 error exportarchive no profiles for 'app' ....
 
 hatası alınıyorsa xcode u kapatıp açınca düzeliyor. (window-->organizer adımından gidince tekrar paket yükleme ekranı açılır. )
+
+
+----------
+
+npm i sırasında gelen Z_BUFF_ERROR unexpected end of file hatası için aşağıdaki komutu çalıştırmak gerekiyor. Sonrasında düzeliyor.
+
+
+```sh
+$ npm cache clean --force
+```
