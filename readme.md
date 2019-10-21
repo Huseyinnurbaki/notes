@@ -5,6 +5,7 @@
 | Aws |
 | Bash |
 | Docker |
+| Go |
 | Jenkins |
 | K8S |
 | Mysql |
