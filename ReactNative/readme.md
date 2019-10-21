@@ -356,3 +356,12 @@ npm i sırasında gelen Z_BUFF_ERROR unexpected end of file hatası için aşağ
 ```sh
 $ npm cache clean --force
 ```
+
+
+----------
+
+
+how pod install works 
+https://medium.com/@scottlydon18/podspecs-podfile-pod-install-what-happens-518af7e6471d
+
+https://www.objc.io/issues/6-build-tools/cocoapods-under-the-hood/
