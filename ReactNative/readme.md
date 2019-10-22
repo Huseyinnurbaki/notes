@@ -365,3 +365,16 @@ how pod install works
 https://medium.com/@scottlydon18/podspecs-podfile-pod-install-what-happens-518af7e6471d
 
 https://www.objc.io/issues/6-build-tools/cocoapods-under-the-hood/
+
+
+------
+
+
+xcode da react native podfile.lock ve manifest.lock bulunamıyorsa
+
+https://stackoverflow.com/questions/31738339/the-sandbox-is-not-in-sync-with-the-podfile-lock-ios/35446801
+
+
+En sonkesin çözüm olabilecek bir şey olarak
+
+![alt text](./img/sandbox.png "nil")
