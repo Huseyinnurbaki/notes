@@ -378,3 +378,19 @@ https://stackoverflow.com/questions/31738339/the-sandbox-is-not-in-sync-with-the
 En sonkesin çözüm olabilecek bir şey olarak
 
 ![alt text](./img/sandbox.png "nil")
+
+
+-------------
+
+expose from swift to rn and rn to swift
+
+https://teabreak.e-spres-oh.com/swift-in-react-native-the-ultimate-guide-part-1-modules-9bb8d054db03
+
+
+------
+
+I ran into the same error AsyncStorage is null error when migrating our test app to RN 0.60.0 today.
+
+I resolved the issue by running react-native unlink @react-native-community/async-storage and cd ios && pod install again.
+
+
