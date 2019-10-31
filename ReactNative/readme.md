@@ -394,3 +394,6 @@ I ran into the same error AsyncStorage is null error when migrating our test app
 I resolved the issue by running react-native unlink @react-native-community/async-storage and cd ios && pod install again.
 
 
+---------
+
+module app registry not found vb hatalarda dependencyler arasında (muhtemelen private bir repomuzdan dolayı) bu hatayı alıyorsak, private repodaki rn versiyonu parent projedekinden farklı olduğu için almış olabiliriz. Aslında parent projenin versiyonuunu alması gerekirdi. Ama böyle bir hata alınınca kontrol edip eşitlenebilir.. 
