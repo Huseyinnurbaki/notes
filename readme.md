@@ -8,6 +8,7 @@
 | Go |
 | Jenkins |
 | K8S |
+| Mac |
 | Mysql |
 | npm |
 | Other |

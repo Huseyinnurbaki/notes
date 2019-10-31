@@ -138,3 +138,39 @@ adımlarını izleyince node u bulamama problemini çözdüm.
 
 
 
+------------
+
+
+Xcode Build Error Jenkins: Your session has expired. Please log in
+
+error like this: 
+
+
+0 : responseId = <CFString 0x7ff48deef220 [0x7fff94b6daf0]>{contents = "40d9ad44-c951-49da-b3f3-b3ea434765a1"}
+
+2 : <CFString 0x7fff94a90b58 [0x7fff94b6daf0]>{contents = "protocolVersion"} = QH65B2
+
+3 : <CFString 0x7ff48dea3420 [0x7fff94b6daf0]>{contents = "requestUrl"} = <CFString 0x7ff48de3d9a0 [0x7fff94b6daf0]>{contents = "https://developerservices2.apple.com/services/QH65B2/viewDeveloper.action"}
+
+6 : <CFString 0x7ff48dec8c30 [0x7fff94b6daf0]>{contents = "userLocale"} = en_US
+
+8 : resultCode = <CFNumber 0x44c37 [0x7fff94b6daf0]>{value = +1100, type = kCFNumberSInt64Type}
+
+9 : userString = <CFString 0x7ff48ded0cc0 [0x7fff94b6daf0]>{contents = "Your session has expired.  Please log in."}
+
+10 : <CFString 0x7ff48dea94d0 [0x7fff94b6daf0]>{contents = "resultString"} = <CFString 0x7ff48de648e0 [0x7fff94b6daf0]>{contents = "authentication.failed"}
+
+11 : httpCode = <CFNumber 0xc837 [0x7fff94b6daf0]>{value = +200, type = kCFNumberSInt64Type}
+
+12 : <CFString 0x7ff48de340f0 [0x7fff94b6daf0]>{contents = "creationTimestamp"} = <CFString 0x7ff48de9a7d0 [0x7fff94b6daf0]>{contents = "2018-10-11T10:19:36Z"}
+
+Solution:
+
+This helped fix the problem with Jenkins running a slave with ssh:
+
+Remove the account via Xcode's preferences
+Quit Xcode
+In terminal, set the preference to not use the keychain service: defaults write com.apple.dt.Xcode DVTDeveloperAccountUseKeychainService_2 -bool NO
+Re-open Xcode and re-add the account
+
+https://stackoverflow.com/questions/52757878/xcode-build-error-jenkins-your-session-has-expired-please-log-in
