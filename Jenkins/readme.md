@@ -174,3 +174,52 @@ In terminal, set the preference to not use the keychain service: defaults write 
 Re-open Xcode and re-add the account
 
 https://stackoverflow.com/questions/52757878/xcode-build-error-jenkins-your-session-has-expired-please-log-in
+
+-------
+
+ sh './gradlew --recompile-scripts --stacktrace'
+
+ yaparen alınan hatanın çözümü
+
+
+error `fsevents` unavailable (this watcher can only be used on Darwin). Run CLI with --verbose flag for more details.
+
+işe yaramayan çözüm
+
+npm install -g fsevents
+
+
+https://stackoverflow.com/questions/52427810/error-fsevents-unavailable-this-watcher-can-only-be-used-on-darwin
+
+çözüm
+
+npm r -g watchman
+brew install watchman
+
+https://github.com/jest-community/vscode-jest/issues/423
+
+-----------
+
+
+SDK location not found. Define location with sdk.dir in the local.properties file or with an ANDROID_HOME environment variable.
+
+
+çözüm
+
+
+react-native projemizde android dizinine local.properties dosyası eklşiyoruz. İçine 
+
+paste your Android SDK path like below
+
+in Windows sdk.dir = C:\\Users\\USERNAME\\AppData\\Local\\Android\\sdk
+in macOS sdk.dir = /Users/USERNAME/Library/Android/sdk
+in linux sdk.dir = /home/USERNAME/Android/Sdk
+Replace USERNAME with your user name
+
+
+koyuyoruz. 
+
+https://stackoverflow.com/questions/32634352/react-native-android-build-failed-sdk-location-not-found
+
+----
+-
