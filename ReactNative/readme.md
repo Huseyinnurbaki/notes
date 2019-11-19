@@ -397,3 +397,60 @@ I resolved the issue by running react-native unlink @react-native-community/asyn
 ---------
 
 module app registry not found vb hatalarda dependencyler arasında (muhtemelen private bir repomuzdan dolayı) bu hatayı alıyorsak, private repodaki rn versiyonu parent projedekinden farklı olduğu için almış olabiliriz. Aslında parent projenin versiyonuunu alması gerekirdi. Ama böyle bir hata alınınca kontrol edip eşitlenebilir.. 
+
+
+-------
+
+Androidde device id çıkılan paketin identifier ve signed apk/bundle sırasında kullanılan sertifikaya göre silip yüklemelerde değişebilir. 
+yani uygulamayı silip kurduk, farklı bir device id oluşabilir. Eğer Cihaz id si seervise gönderilioyr ve bnunlakontrol yapılıyorsa bu bilgi önemli olabilir. Test ederken yaşanabilir. 
+
+
+------
+
+
+zipli xcode versiyonunu açarken tarihi geçti vb hatası için bilgisayar tarihini geri çekince durum düzeliyor.
+
+
+-----------
+
+
+ios xcode cache temizleme
+
+cmd shift alk k --> clean build folder
+rm -rf Pods && Podfile.lock
+pod cache clean --all
+pod deintegrate
+
+
+
+rm -rf "$(getconf DARWIN_USER_CACHE_DIR)/org.llvm.clang/ModuleCache"
+
+Delete derived data
+
+rm -rf ~/Library/Developer/Xcode/DerivedData
+ xcode kapalıyken yapılır
+
+
+ -------
+
+
+ Bundletool kullanımı
+Android paketinin bundle(.aab) uzantılı çıkınca paketi telefona nasıl atarım ? 
+
+java -jar bundletool-all-0.3.3.jar build-apks --bundle=/path/to//app.aab --output=/path/to/my_app.apks --ks=/path/to/release.keystore --ks-pass=pass:changeit --ks-key-alias=key0 --key-pass=pass:changeit
+
+Release paketi oluşturmak için yukarıdaki komutu kullanıyoruz. 
+
+Keystore credentiallarını vermezsek debug modeda paketler oluşturucak. 
+
+komutun sonunda apks olması şart. Tüm apk 
+
+bu bize apks dosyası vericek içinde her cihaza uygun apk var. Tek tek açılmıyor Yine bundletool ile telefona atmak gerekiyor. 
+
+
+cihaza atmak için
+bundletool un olduğu dizine geçiyorum. (bu durumda indirilenler içerisinde)
+java -jar bundletool-all-0.3.3.jar install-apks --apks=/path/to//my_app.apks
+
+
+kaynak: https://developer.android.com/studio/command-line/bundletool
