@@ -454,3 +454,12 @@ java -jar bundletool-all-0.3.3.jar install-apks --apks=/path/to//my_app.apks
 
 
 kaynak: https://developer.android.com/studio/command-line/bundletool
+
+-----
+
+Ios'ta notificationları test ederken 
+
+[Failed to push 6dje7djksis7hyhdjshsjksjd74jdjskshdjd8dhjjdkwu for reason 8]
+Which is Invalid Token.
+
+şeklinde hata alıyorsak problem appleın notification için 2 mode u olmasından ve kullandığımız sertifikalardan kaynaklı. Ios paketi oluşturduk, debug da iken uygulama bildirim geliyor, debugda değilken bildirim gelmiyor. Problem sertifikalar ve deployment mode u ile ilgili. Eğer konfigürasyonumuz test servislere notification atacaksa enterprise ve ad-hoc mode da çalışmayacak. Yukarıdaki hatayı verecek. Bu modedaki deploymentlarda apple kendi production urline istek atılmasını bekliyor.
