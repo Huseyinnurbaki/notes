@@ -437,7 +437,7 @@ rm -rf ~/Library/Developer/Xcode/DerivedData
  Bundletool kullanımı
 Android paketinin bundle(.aab) uzantılı çıkınca paketi telefona nasıl atarım ? 
 
-java -jar bundletool-all-0.3.3.jar build-apks --bundle=/path/to//app.aab --output=/path/to/my_app.apks --ks=/path/to/release.keystore --ks-pass=pass:changeit --ks-key-alias=key0 --key-pass=pass:changeit
+java -jar bundletool-all-0.3.3.jar build-apks --bundle=/path/to/app.aab --output=/path/to/my_app.apks --ks=/path/to/release.keystore --ks-pass=pass:changeit --ks-key-alias=key0 --key-pass=pass:changeit
 
 Release paketi oluşturmak için yukarıdaki komutu kullanıyoruz. 
 
@@ -463,3 +463,50 @@ Ios'ta notificationları test ederken
 Which is Invalid Token.
 
 şeklinde hata alıyorsak problem appleın notification için 2 mode u olmasından ve kullandığımız sertifikalardan kaynaklı. Ios paketi oluşturduk, debug da iken uygulama bildirim geliyor, debugda değilken bildirim gelmiyor. Problem sertifikalar ve deployment mode u ile ilgili. Eğer konfigürasyonumuz test servislere notification atacaksa enterprise ve ad-hoc mode da çalışmayacak. Yukarıdaki hatayı verecek. Bu modedaki deploymentlarda apple kendi production urline istek atılmasını bekliyor.
+
+
+------
+
+Iosta headermaps için use headermaps yes dediğimizde "$(BUILT_PRODUCTS_DIR)" pathini verinde debug-iphoneos buildinda podları da build etmeye çalışacak. (podlar swift olmadığı için compile edemeyecek. Buynu detaylandır.)
+
+
+------
+
+
+use header maps yes demezsek
+
+bridging header içerisinde #import "AppDelegate.h" yapınca bulunamadı diyor.
+(while exposing objc file to swift)
+
+
+
+
+---------
+
+https://stackoverflow.com/questions/58376586/how-to-fix-pod-install-error-glog-is-too-old-or-missing-react-native-ios-in-wind
+
+
+xcode-select --switch /Applications/Xcode.app
+
+
+rn 61.5 için pod install yaparken aldığım hatanın çözümü.
+
+
+---------
+
+
+ios terminalden archive etme
+
+xcodebuild -workspace <ProjectName>/<ProjectName>.xcworkspace -scheme <schemeName> clean archive -configuration release -sdk iphoneos -archivePath <ProjectName>.xcarchive
+
+
+
+https://stackoverflow.com/questions/2664885/xcode-build-and-archive-from-command-line
+
+
+--------
+
+android . no cached version available
+
+
+https://stackoverflow.com/questions/22607661/no-cached-version-available-for-offline-mode
