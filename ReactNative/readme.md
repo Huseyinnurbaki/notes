@@ -455,6 +455,11 @@ java -jar bundletool-all-0.3.3.jar install-apks --apks=/path/to//my_app.apks
 
 kaynak: https://developer.android.com/studio/command-line/bundletool
 
+problem olursa 
+
+adb kill-server
+
+durumu çözüyor.
 -----
 
 Ios'ta notificationları test ederken 
