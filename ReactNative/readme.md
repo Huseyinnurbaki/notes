@@ -515,3 +515,23 @@ android . no cached version available
 
 
 https://stackoverflow.com/questions/22607661/no-cached-version-available-for-offline-mode
+
+
+
+-------
+
+Xcode build error - Multiple commands produce .o, Target 'ProjectCoreData' has compile command for Swift source files listed twice
+
+
+build phases kısmında copy pods resources aşamasında "run script only whe installing" seçeneğini checkledim. 
+
+
+
+
+------
+ios için appicon ekleme 
+
+1024x1024 ebatında görseli siteye yükle. 
+https://makeappicon.com/
+
+40x40 için bir görsel gelmeyecek fakat 20x20@2x formatındaki görsel 40x40 a denk geliyor.
