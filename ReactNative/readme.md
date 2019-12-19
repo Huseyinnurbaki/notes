@@ -535,3 +535,28 @@ ios için appicon ekleme
 https://makeappicon.com/
 
 40x40 için bir görsel gelmeyecek fakat 20x20@2x formatındaki görsel 40x40 a denk geliyor.
+
+
+
+--------
+
+how to find team id ? (ios deveopler acount)
+
+https://www.mobiloud.com/help/knowledge-base/ios-app-transfer/
+
+----------
+
+
+Profile doesn't match the entitlements file's value for the application-identifier entitlement
+
+identifier için eksra konfigurasyon yapmışız fakat xcode dan konfügüre etmemişiz...örneğin identifier özelliği olarak icloud eklemişiz, xcodeda signing & app capabilities kısmına tanımlamamışız.
+
+
+---------
+
+react-native-maps androidde logsuz crash edince çözümünde yaptığım:
+androoid manifest dosyasına 
+<uses-library android:name="org.apache.http.legacy" android:required="false"/>
+ekledim.
+
+https://github.com/react-native-community/react-native-maps/issues/2880
