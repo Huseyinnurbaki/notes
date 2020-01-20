@@ -20,3 +20,16 @@ https://dzone.com/articles/writing-a-microservice-in-golang-which-communicate
 https://github.com/go-kit/kit
 https://dev.to/napolux/how-to-write-a-microservice-in-go-with-go-kit-a66
 https://tour.golang.org/moretypes/13
+
+
+
+
+----------
+
+Protocol Buffers
+
+
+Protocol buffers are a language-neutral, platform-neutral extensible mechanism for serializing structured data.
+
+
+https://developers.google.com/protocol-buffers
