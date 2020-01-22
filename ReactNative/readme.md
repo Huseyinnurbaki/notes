@@ -560,3 +560,20 @@ androoid manifest dosyasına
 ekledim.
 
 https://github.com/react-native-community/react-native-maps/issues/2880
+
+
+----
+
+Ios build config (variant) ile ilgili önemli not
+
+react native (v60 öncesi)
+
+Library olarak eklediğimizde debug ve release için derleniyor, oluşturduğumuz yeni konfigler için derlenmiyor. 
+Build settings altında header search paths e aşağıdaki dizin eklenmeli ki release altından alınabilsin.
+
+
+Eğer debugdan başka debug edilebilen configlerimiz varsa 
+$(BUILD_DIR)/Release-$(PLATFORM_NAME)/include
+
+infopliste aşağıdaki dizini de ekleyip debug olanlara bu dizini vermek lazım.
+$(BUILD_DIR)/Debug-$(PLATFORM_NAME)/include
