@@ -577,3 +577,9 @@ $(BUILD_DIR)/Release-$(PLATFORM_NAME)/include
 
 infopliste aşağıdaki dizini de ekleyip debug olanlara bu dizini vermek lazım.
 $(BUILD_DIR)/Debug-$(PLATFORM_NAME)/include
+
+
+------
+
+
+multiple commands produce ... file hatası şu anlama eliyor. build phases içersinde copy bundle resources kısmında aynı isimli dosyalar var. yanlış alakasız olanı çıkarmak lazım. 
