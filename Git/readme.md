@@ -24,3 +24,11 @@ curl -X POST --data-urlencode "payload={\"channel\": \"#docs\", \"username\": \"
 
 
 Her kullanıcı reposunda yukarıdaki komutu çalıştırmalı. npm olsaydı package.json içerisinden yönetebilirdik ancak npm gibi p.manager ların olmadıpı projelrde herkesin hook dizinini güncellemesi lazım.
+
+----
+
+
+git remove untracked files
+
+git clean -d -f -f
+
