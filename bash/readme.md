@@ -39,3 +39,13 @@ lsof -ti:8081 | xargs kill
 copy directory flags
 
 -R recursive copy
+
+-----
+
+
+2 condition olacaksa (arasında operator olan )
+
+if [ "${CONFIGURATION}" == "Debug"] || [ "${CONFIGURATION}" == "Release"   ]; then
+
+
+şeklinde yazmak gerekiyor. yoksa condition çalışmaz. 
