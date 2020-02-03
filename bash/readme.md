@@ -49,3 +49,15 @@ if [ "${CONFIGURATION}" == "Debug"] || [ "${CONFIGURATION}" == "Release"   ]; th
 
 
 şeklinde yazmak gerekiyor. yoksa condition çalışmaz. 
+
+
+-----
+
+
+code . ~/.bash_profile vscode da aç
+
+alias k='kubectl'
+
+sonra sourcela
+
+source ~/.bash_profile
