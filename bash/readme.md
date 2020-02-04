@@ -54,7 +54,9 @@ if [ "${CONFIGURATION}" == "Debug"] || [ "${CONFIGURATION}" == "Release"   ]; th
 -----
 
 
-code . ~/.bash_profile vscode da aç
+code . ~/.bash_profile 
+
+vscode da aç
 
 alias k='kubectl'
 

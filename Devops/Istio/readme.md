@@ -108,3 +108,8 @@ $ kubectl logs PODNAME -c istio-proxy -n NAMESPACE
 
 kubectl logs istio-ingressgateway-5d74ffc456-z7zg4  -c istio-proxy -n istio-system --since=1m
 
+
+----
+
+
+gateway için 503 alıyorsak muhtemelen pod a kadar geldik ve pod içindeki containerın portu yanlış. 

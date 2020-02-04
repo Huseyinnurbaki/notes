@@ -39,3 +39,14 @@ nslookup my-nginx
  nslookup <servicename>
 
 şimdi curl atabiliriz bulunduğumuz poddan
+
+
+-----
+
+
+switch ns without kubens 
+
+kubectl config set-context --current --namespace=my-namespace
+
+
+
