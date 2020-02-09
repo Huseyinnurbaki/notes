@@ -63,3 +63,12 @@ alias k='kubectl'
 sonra sourcela
 
 source ~/.bash_profile
+
+------
+
+
+$KIALI_USERNAME=$(read -p 'Kiali Username: ' uval && echo -n $uval | base64)
+$KIALI_PASSPHRASE=$(read -sp 'Kiali Passphrase: ' pval && echo -n $pval | base64)
+
+
+terminalden değer alıp atama yapar.

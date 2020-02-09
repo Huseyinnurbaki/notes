@@ -46,7 +46,18 @@ nslookup my-nginx
 
 switch ns without kubens 
 
-kubectl config set-context --current --namespace=my-namespace
+```sh
+kubectl config set-context --current --namespace=myns
+```
+
+current context
+```sh
+kubectl config current-context 
+```
 
 
+current namespace
+```sh
+kubectl config view --minify | grep namespace:
+```
 
