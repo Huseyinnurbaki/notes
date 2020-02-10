@@ -113,3 +113,23 @@ kubectl logs istio-ingressgateway-5d74ffc456-z7zg4  -c istio-proxy -n istio-syst
 
 
 gateway için 503 alıyorsak muhtemelen pod a kadar geldik ve pod içindeki containerın portu yanlış. 
+
+
+-----
+
+enable kiali grafana
+
+```sh
+istioctl manifest apply --set values.kiali.enabled=true
+istioctl manifest apply --set values.grafana.enabled=true
+istioctl manifest apply -set values.tracing.enabled=true
+```
+
+
+---
+
+set profile 
+
+```sh
+istioctl manifest apply --set profile=demo
+```

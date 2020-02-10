@@ -61,3 +61,20 @@ current namespace
 kubectl config view --minify | grep namespace:
 ```
 
+pod un hashli ismini alma
+
+```sh
+kubectl -n istio-system get pod -l app=grafana -o jsonpath='{.items[0].metadata.name}' 
+```
+
+
+
+---
+
+kill port forwarding
+
+```sh
+killall kubectl
+```
+
+
