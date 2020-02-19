@@ -583,3 +583,15 @@ $(BUILD_DIR)/Debug-$(PLATFORM_NAME)/include
 
 
 multiple commands produce ... file hatası şu anlama eliyor. build phases içersinde copy bundle resources kısmında aynı isimli dosyalar var. yanlış alakasız olanı çıkarmak lazım. 
+
+
+
+
+----------
+
+
+
+  jsCodeLocation = [NSURL URLWithString:@"http://127.0.0.1:8081/index.ios.bundle?platform=ios&dev=true"];
+
+
+appdelegate dinamik olarak homeadresini bulamazsa jsCodeLocation ı yukarıdaki gibi değiştirebiliriz. 

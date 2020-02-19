@@ -72,3 +72,19 @@ $KIALI_PASSPHRASE=$(read -sp 'Kiali Passphrase: ' pval && echo -n $pval | base64
 
 
 terminalden değer alıp atama yapar.
+
+
+------------
+
+
+if true | openssl s_client -connect www.eum.albarakaturk.com.tr:443 2>/dev/null | \
+  openssl x509 -noout -checkend 0; then
+  echo "Certificate is not expired"
+else
+  echo "Certificate is expired"
+fi
+
+
+ssl sertifikası valid mi kontrol eder
+
+
