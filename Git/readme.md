@@ -32,3 +32,29 @@ git remove untracked files
 
 git clean -d -f -f
 
+-------
+
+
+
+git push multiple repos
+
+git remote show origin
+
+git remote add origin2 http://myrepo1.git
+
+* originin yanına ayrı bir alan açıyor. İçine istediğim url i koyabiliyorum. originden ayrı tutmak sağlıklı
+
+git remote set-url --add --push origin2  http://myrepo1.git
+git remote set-url --add --push origin2  http://myrepo2.git
+
+
+![alt text](./img/multipush.png "multipush")
+
+
+Bir repoda önceden commit varsa ezmek için
+
+git push origin2 BRANCIWANTTOPUSH --force
+
+haliyle 2 taaftan pull diyemeyiz. fetch konf,güre edilebilir.
+https://jigarius.com/blog/multiple-git-remote-repositories
+2 min version
