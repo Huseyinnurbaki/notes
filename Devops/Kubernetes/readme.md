@@ -85,6 +85,7 @@ killall kubectl
 k get po dediğimde host not found için geçici çözğm 
 
 
+/Users/usr/.kube/config
 
 
 
@@ -97,3 +98,14 @@ clusters:
 
 
 
+------
+
+
+docker desktop kubernetes starting forever.
+
+
+rollback to Version 2.0.0.2 (30215)
+
+bu kurulurken clusterı sıfırddan oluşturuyor. 
+
+belki güncellersem düzgün devam eder. ?? 
