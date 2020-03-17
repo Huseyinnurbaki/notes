@@ -78,3 +78,22 @@ killall kubectl
 ```
 
 
+------
+
+
+
+k get po dediğimde host not found için geçici çözğm 
+
+
+
+
+
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS
+    server: https://127.0.0.1:6443 // burayı localhost ip si yaptım. 
+ ********
+
+
+

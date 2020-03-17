@@ -36,7 +36,7 @@ git clean -d -f -f
 
 
 
-git push multiple repos
+# git push multiple repos
 
 git remote show origin
 

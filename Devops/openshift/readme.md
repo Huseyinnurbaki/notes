@@ -63,3 +63,9 @@ or if exists
 
  imagestream dev to test
  
+  if crc is broken
+
+
+rm -rf ~/.crc
+crc setup
+crc start

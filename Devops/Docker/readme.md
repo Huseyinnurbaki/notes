@@ -17,3 +17,32 @@ docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 
 Kill all instances etc
+
+
+
+----
+
+rename image (if no name)
+
+docker image tag ecfb260cb174 hhaluk/my-app:latest
+ecf... container id
+
+or
+
+docker image tag server:latest myname/server:latest
+
+
+---
+
+build & tag with dockerfile 
+
+docker build -t hhaluk/tuts .
+
+
+
+--------
+
+
+docker build -t hhaluk/node--- .
+
+docker run -p 30046:8080 -d hhaluk/---
