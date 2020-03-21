@@ -68,3 +68,17 @@ https://help.github.com/en/enterprise/2.17/user/github/authenticating-to-github/
 
 
 ----
+
+
+# Switching remote urls  https <-> ssh
+
+
+$ git remote -v
+display origin url
+
+$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+
+bunun yerine ssh yazılabilir. 
+
+$ git remote -v
+-- Verify new remote URL
