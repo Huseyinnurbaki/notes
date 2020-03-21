@@ -109,3 +109,17 @@ rollback to Version 2.0.0.2 (30215)
 bu kurulurken clusterı sıfırddan oluşturuyor. 
 
 belki güncellersem düzgün devam eder. ?? 
+
+
+------
+
+
+error: SchemaError(io.k8s.api.certificates.v1beta1.CertificateSigningRequestCondition): invalid object doesn't have additional properties
+
+rm /usr/local/bin/kubectl
+
+brew link --overwrite kubernetes-cli
+
+
+https://stackoverflow.com/questions/55417410/kubernetes-create-deployment-unexpected-schemaerror
+

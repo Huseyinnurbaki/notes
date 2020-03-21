@@ -595,5 +595,14 @@ multiple commands produce ... file hatası şu anlama eliyor. build phases içer
 rn 61.5 için 
 
 jsCodeLocation = [NSURL URLWithString:@"http://127.0.0.1:8081/index.bundle?platform=ios&dev=true"];
+jscodelocation code push için...
 
+direkt aşağıdaki gibi de güncelleyebilriz.
+
+ #if DEBUG
+  return [NSURL URLWithString:@"http://127.0.0.1:8081/index.bundle?platform=ios&dev=true"];
+
+#else
+  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+#endif
 appdelegate dinamik olarak homeadresini bulamazsa jsCodeLocation ı yukarıdaki gibi değiştirebiliriz. 
