@@ -606,3 +606,12 @@ direkt aşağıdaki gibi de güncelleyebilriz.
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
 appdelegate dinamik olarak homeadresini bulamazsa jsCodeLocation ı yukarıdaki gibi değiştirebiliriz. 
+
+-----
+
+
+kurulu cocoapods versiyonları
+gem list cocoapods
+
+birini uninstall etme
+sudo gem uninstall cocoapods -v 1.8.4

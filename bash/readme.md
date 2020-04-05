@@ -98,3 +98,18 @@ sudo grep 192.168.1.1 * -verbose
 * yerine dosya yazılabilir
 ip aradığım text
 -verbose ekstra görüntülemek için
+
+
+----
+
+ps -ax
+
+tüm processleri gösterme
+
+
+-----------
+
+dosya bulma
+mdfind <dosyaadı>
+
+~ $ find . -type d | grep <dosyaadı>
