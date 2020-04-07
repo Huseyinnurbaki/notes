@@ -82,3 +82,11 @@ bunun yerine ssh yazılabilir.
 
 $ git remote -v
 -- Verify new remote URL
+
+
+
+-----
+
+remotta olmayan branchi pushlama (origin yerine başka remoteumuzu da yazabiliriz)
+
+git push --set-upstream origin <branch-name>

@@ -615,3 +615,51 @@ gem list cocoapods
 
 birini uninstall etme
 sudo gem uninstall cocoapods -v 1.8.4
+
+
+
+
+
+
+-------------
+
+Javascript arrayden objeleri kurtarım başka obje içine yazma.
+
+[ 0: {a: {}},
+  1: {c: {}},
+  2: {e: {}}
+]
+
+olanı 
+
+
+{
+  a:{},
+  b:{},
+  c:{},
+}
+
+bu ihtiyacım firebaseden .doc çekmeden direkt collectionı çekip reducera yazarken oluşmuştu. array içinde sayfaya gelene kadar complexity rtıyordu. 
+
+örnek kullanımm
+
+
+  let documentSnapshot = yield firestore()
+      .collection('global')
+      .get();
+    let snapshot = documentSnapshot.docs;
+
+  //snapshot içinden docs u aldık
+    let docData = {};
+    for (let i = 0; i < snapshot.length; i++) {
+      Object.assign(docData, snapshot[i].data());
+    }
+
+    docdata burada source umuz
+    snapshot[i].data() ise eklemek isrtediklerimiz.
+    docdatayı da success actionına verdim. 
+
+    burada da başka kolay bir örnek:
+    https://stackoverflow.com/questions/45595218/is-it-possible-to-push-an-object-into-in-an-existing-objects-property
+
+    
