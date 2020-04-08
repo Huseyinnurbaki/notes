@@ -123,3 +123,31 @@ brew link --overwrite kubernetes-cli
 
 https://stackoverflow.com/questions/55417410/kubernetes-create-deployment-unexpected-schemaerror
 
+------
+Services without selectors
+Services most commonly abstract access to Kubernetes Pods, but they can also abstract other kinds of backends. For example:
+
+You want to have an external database cluster in production, but in your test environment you use your own databases.
+You want to point your Service to a Service in a different Namespace or on another cluster.
+You are migrating a workload to Kubernetes. Whilst evaluating the approach, you run only a proportion of your backends in Kubernetes.
+
+https://kubernetes.io/docs/concepts/services-networking/service/
+
+
+------
+
+golden bug***
+
+openshift code ready containers kurulumundan sonra bilgisayarımda localhost u çözümleyememe durumu başladı. ne emülatorler bulabiliyordu ne de k8s ayağa kalkıyordu. etafından dolanmak için yeniden kurdum dockerla ilgili her şeyi sildim dns ayarı yaptım nafile. minikube kurdum kısmi olarak çalıştı. sonr ayeniden bozuldu. .kube/config dosyasında cluster bilgilerinde server: 
+https://kubernetes.docker.internal:6443 bulunuyor. etc/hosts dosyasında biz bu adresi 127.0.0.1 ile eşleştiriyoruz. Sanıyorum crc kurduktan sonra bu durum bozuldu. hosts dosyasını silip yeeniden oluşturmak problemimi çözmedi. ama hosts dosyası düzenlendikten sonra dns cacche ini temizlemek gerekiyormuş. 
+
+işte problemimi çözen o komut:
+
+
+```sh
+$ dscacheutil -flushcache
+```
+dns cache ini temizliyor macte.
+
+problemin ilk adımları could not resolve kubernetes.docker.internal . şeklinde başladı.
+Sonrasında yeniden başlatınca durum çözüldü.
