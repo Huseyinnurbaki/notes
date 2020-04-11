@@ -151,3 +151,18 @@ dns cache ini temizliyor macte.
 
 problemin ilk adımları could not resolve kubernetes.docker.internal . şeklinde başladı.
 Sonrasında yeniden başlatınca durum çözüldü.
+
+
+----
+
+port-forward a service 
+
+
+k port-forward svc/whoami-svc -n playground  7888:7888 
+
+
+----
+
+sh pod e.g. busybox
+
+k run -it   --image=busybox test sh

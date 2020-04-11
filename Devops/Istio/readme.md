@@ -1,4 +1,4 @@
-# K8s kurulum
+# Istio kurulum (d4d mac)
 
 ```sh
 $ curl -L https://istio.io/downloadIstio | sh -
@@ -158,6 +158,14 @@ cluster.outbound|8000||httpbin.myns.svc.cluster.local.upstream_rq_pending_total:
 
 
 httpbin hostuna gelen get lerin statlarını sorguladık.
+
+
+
+-------
+
+## Virtual Service
+
+her hostun 1 vs si olabilir.
 
 
 
