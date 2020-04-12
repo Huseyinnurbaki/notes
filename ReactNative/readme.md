@@ -662,4 +662,69 @@ bu ihtiyacım firebaseden .doc çekmeden direkt collectionı çekip reducera yaz
     burada da başka kolay bir örnek:
     https://stackoverflow.com/questions/45595218/is-it-possible-to-push-an-object-into-in-an-existing-objects-property
 
-    
+------
+
+
+
+
+iosta farklı config dosyaları için ortak header-bridge kullanırken importlarda sıkıntı varsa
+
+app in header search paths kısmına aşağıdaki değeri ekle:
+
+$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)/include
+
+
+--------
+
+
+gradle cache temizleme
+
+Gradle cache locates at
+
+On Windows: %USER_HOME%\.gradle/caches/
+On Mac/Unix: $HOME/.gradle/caches/
+You can browse to these directory and manually delete it or run
+
+rm -rf $HOME/.gradle/caches/
+on Unix system. Run this command will also force to download dependencies.
+
+Update 2: Clear the Android build cache of current project
+
+Note: Android Studio's File | Invalidate Caches/Restart doesn't clear the Android build cache, so you'll have to clean it separately.
+
+On Windows:
+
+gradlew cleanBuildCache
+On Mac or Linux:
+
+./gradlew cleanBuildCache
+
+------
+
+
+react native info env hakkinda bilgi  evriyor
+
+----
+
+# Ios Notes
+
+
+Obj-c
+
+if (a -> b )
+
+a b tipinde bir şey retıurn etmek zorunda
+
+
+
+-----
+
+
+
+frameworkun arch uygunluğunu anlamak için 
+
+framework içine girip
+
+lipo -info <FRAMEWORK>
+---
+
