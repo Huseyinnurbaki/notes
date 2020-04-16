@@ -10,3 +10,7 @@ One of the big differences between in-memory calls and remote calls is that remo
 https://martinfowler.com/bliki/CircuitBreaker.html
 
 -----
+
+cb - retry anlatımı
+
+https://dev.to/supriyasrivatsa/retry-vs-circuit-breaker-346o
