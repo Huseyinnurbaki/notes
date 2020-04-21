@@ -90,3 +90,18 @@ $ git remote -v
 remotta olmayan branchi pushlama (origin yerine başka remoteumuzu da yazabiliriz)
 
 git push --set-upstream origin <branch-name>
+
+----
+
+Push branch to another
+
+```sh
+git push origin branch1(source):branch2(destination)
+```
+
+or 
+
+```sh
+git push <remote> <branch with new changes>:<branch you are pushing to>
+```
+ 
