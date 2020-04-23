@@ -34,7 +34,7 @@ prosesin koştuu portu bulup prosesi öldürme
 ```sh
 lsof -ti:8081 | xargs kill
 ```
-
+---
 
 copy directory flags
 
