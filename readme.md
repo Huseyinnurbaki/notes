@@ -1,4 +1,7 @@
-# Archive
+
+![alt text](./tn2.png "tn")
+
+# Personal Notes, Tips & Tricks
 
 ## [Any](https://github.com/Huseyinnurbaki/notes/tree/master/Any)
 ## [Bash](https://github.com/Huseyinnurbaki/notes/tree/master/bash)
