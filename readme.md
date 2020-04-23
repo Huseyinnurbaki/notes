@@ -22,10 +22,7 @@
 ## [Other](https://github.com/Huseyinnurbaki/notes/tree/master/Other)
 ## [Pm](https://github.com/Huseyinnurbaki/notes/tree/master/pm)
 ## [React](https://github.com/Huseyinnurbaki/notes/tree/master/React)
-## [ReactNative](https://github.com/Huseyinnurbaki/notes/tree/master/ReactNative)
-* [Ecmascript](https://github.com/Huseyinnurbaki/notes/tree/master/ReactNative/Ecmascript)
-* [RNN](https://github.com/Huseyinnurbaki/notes/tree/master/ReactNative/RNN)
-* [Ecmascript](https://github.com/Huseyinnurbaki/notes/tree/master/ReactNative/Ecmascript)
+## [Mobile](https://github.com/Huseyinnurbaki/notes/tree/master/Mobile)
 ## [Spring](https://github.com/Huseyinnurbaki/notes/tree/master/Spring)
 ## [UsefulWebsites](https://github.com/Huseyinnurbaki/notes/tree/master/UsefulWebsites)
 
