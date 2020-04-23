@@ -19,7 +19,7 @@
 ## [Go](https://github.com/Huseyinnurbaki/notes/tree/master/Go)
 ## [Java](https://github.com/Huseyinnurbaki/notes/tree/master/Java)
 ## [npm](https://github.com/Huseyinnurbaki/notes/tree/master/npm)
-## [Other](https://github.com/Huseyinnurbaki/notes/tree/master/Other)
+## [Irrelevant](https://github.com/Huseyinnurbaki/notes/tree/master/Irrelevant)
 ## [Pm](https://github.com/Huseyinnurbaki/notes/tree/master/pm)
 ## [React](https://github.com/Huseyinnurbaki/notes/tree/master/React)
 ## [Mobile](https://github.com/Huseyinnurbaki/notes/tree/master/Mobile)
