@@ -765,6 +765,14 @@ bu ihtiyacım firebaseden .doc çekmeden direkt collectionı çekip reducera yaz
 
 -----
 
+## JSON objesinden keyleri extract etme
+
+   const incomingRequestKeys = Object.keys({"key1": 23, "key2": 24); 
+   // [key1,key2]
+
+
+-----
+
 module app registry not found vb hatalarda dependencyler arasında (muhtemelen private bir repomuzdan dolayı) bu hatayı alıyorsak, private repodaki rn versiyonu parent projedekinden farklı olduğu için almış olabiliriz. Aslında parent projenin versiyonuunu alması gerekirdi. Ama böyle bir hata alınınca kontrol edip eşitlenebilir.. 
 
 
@@ -782,7 +790,15 @@ $ npm cache clean --force
 
 https://dev.to/asimdahall/simple-search-form-in-react-using-hooks-42pg
 
+## hooks kullanılarak oluşturulan fonksiyona verdiğimiz data tekrar servis çağrısıyla nasıl güncellenir. 
 
+ const [displayedApis, setApis] = useState(props.apis.data);
+
+    useEffect(() => {
+        setApis(props.apis.data);
+    }, [props.apis.data]);
+
+    propunun verildiği parenttan gelen güncel datayı alması için yukarıdaki gibi useEffect kullanıyoruzç
 
 # React Native Navigation
 
