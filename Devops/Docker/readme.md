@@ -46,3 +46,21 @@ docker build -t hhaluk/tuts .
 docker build -t hhaluk/node--- .
 
 docker run -p 30046:8080 -d hhaluk/---
+
+----
+
+## display running processes of a container 
+
+$ docker container top CONTAINER
+
+## stop & kill contaimner
+
+$ docker stop <CONTAINERID> | xargs docker rm
+
+## container bash
+
+ docker exec -it <CONTAINERID> /bin/bash
+
+ ## show ports
+
+ docker container port <CONTAINERID>
