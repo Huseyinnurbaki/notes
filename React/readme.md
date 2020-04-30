@@ -68,3 +68,8 @@ const BigTextInput = (props) => {
 
 export default BigTextInput;
 ```
+
+## Eslint & Prettier
+
+very good explanation
+https://thomlom.dev/setup-eslint-prettier-react/
