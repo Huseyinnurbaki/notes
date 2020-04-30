@@ -64,3 +64,10 @@ $ docker stop <CONTAINERID> | xargs docker rm
  ## show ports
 
  docker container port <CONTAINERID>
+
+
+## multi service container 
+
+https://docs.docker.com/config/containers/multi-service_container/
+
+github/Huaeyinnurbaki/mocktail
