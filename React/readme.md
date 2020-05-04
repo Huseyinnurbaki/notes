@@ -73,3 +73,15 @@ export default BigTextInput;
 
 very good explanation
 https://thomlom.dev/setup-eslint-prettier-react/
+
+
+----
+
+## scroll to top
+
+window.scrollTo(0, 0)
+
+
+## Sticky div css
+
+position: 'fixed'
