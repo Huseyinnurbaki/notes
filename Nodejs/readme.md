@@ -6,3 +6,10 @@ büyük request bodyleri parse etmek gerekiyor. Bunun için middleware kullanıl
 app.use(bodyParser.json({ limit: '40MB' }));
 
 artık 40mb kadar parse edebiliyoruz
+
+---
+express.json other options
+app.use(bodyParser.json({ limit: '40MB' }));
+gibi kullanılıyor.
+https://expressjs.com/en/api.html
+![alt text](./img/exp.png "exp")
