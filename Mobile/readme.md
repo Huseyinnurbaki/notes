@@ -1,6 +1,15 @@
 
 # IOS
 
+## Changing mimimum deployment target.
+
+open related xcconfig configfile
+paste following
+IPHONEOS_DEPLOYMENT_TARGET = 11
+it will be set autoamtically.
+devices simulator os lower than 11 will not be listed.
+
+
 ## debug/release frameworku aynı branchte build konfigurasyonuna göre seçme
 
 1) build hases kısmına yeni ir script ekledim
