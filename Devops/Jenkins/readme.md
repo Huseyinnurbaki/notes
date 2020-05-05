@@ -222,4 +222,17 @@ koyuyoruz.
 https://stackoverflow.com/questions/32634352/react-native-android-build-failed-sdk-location-not-found
 
 ----
--
+
+# Installation
+
+https://github.com/jenkinsci/docker/blob/master/README.md
+
+pvc:
+
+docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+
+Ephemeral:
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+
+later on terminal, admin passsword and following log will be prompted.
+This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
