@@ -13,3 +13,7 @@ app.use(bodyParser.json({ limit: '40MB' }));
 gibi kullanılıyor.
 https://expressjs.com/en/api.html
 ![alt text](./img/exp.png "exp")
+
+---
+
+quick-db usess better-sqlite3. better-sqlite3 

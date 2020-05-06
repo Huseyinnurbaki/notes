@@ -819,3 +819,12 @@ topBar: {
         showTitle: false
     }
 }
+
+
+---
+
+# Yarn
+
+error eslint@6.8.0: The engine "node" is incompatible with this module
+
+yarn install --ignore-engines
