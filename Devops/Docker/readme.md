@@ -77,3 +77,19 @@ github/Huaeyinnurbaki/mocktail
 ## View remote containers 
 
 docker -H <--IP--> ps
+
+## stop all containers
+
+docker container stop $(docker container ls -aq)
+
+## Remove all stopped containers
+
+ docker container rm $(docker container ls -aq)
+
+## docekr kill all containers
+
+docker kill $(docker ps -q)
+
+## docker kill last n containers
+
+d kill $(d container ls --last n)
