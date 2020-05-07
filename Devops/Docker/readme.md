@@ -72,3 +72,8 @@ https://docs.docker.com/config/containers/multi-service_container/
 https://forums.docker.com/t/best-practices-multiple-app-in-containers/913/9
 https://medium.com/@karthi.net/how-to-run-multiple-services-in-a-docker-container-5919fcc981a6
 github/Huaeyinnurbaki/mocktail
+
+
+## View remote containers 
+
+docker -H <--IP--> ps
