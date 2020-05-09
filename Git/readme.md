@@ -93,7 +93,7 @@ git push --set-upstream origin <branch-name>
 
 ----
 
-Push branch to another
+# Push branch to another
 
 ```sh
 git push origin branch1(source):branch2(destination)
@@ -105,3 +105,13 @@ or
 git push <remote> <branch with new changes>:<branch you are pushing to>
 ```
  
+----
+
+# Correct Git repo language
+
+add .gitattributes to the project
+
+* linguist-vendored
+*.js linguist-vendored=false
+
+now it is js.

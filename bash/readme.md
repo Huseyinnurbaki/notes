@@ -29,14 +29,14 @@ chmod +x executableFileName     # only required if your file is not already exec
 
 ----------
 
-prosesin koştuu portu bulup prosesi öldürme
+# prosesin koştuu portu bulup prosesi öldürme
 
 ```sh
 lsof -ti:8081 | xargs kill
 ```
 ---
 
-copy directory flags
+# copy directory flags
 
 -R recursive copy
 
@@ -118,3 +118,5 @@ mdfind <dosyaadı>
 
 # send multiple requests
  for i in `seq 1 100`; do curl -s -o /dev/null http://localhost/whoami; done
+
+ 
