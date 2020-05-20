@@ -828,3 +828,57 @@ topBar: {
 error eslint@6.8.0: The engine "node" is incompatible with this module
 
 yarn install --ignore-engines
+
+
+------
+
+
+## framework içinde app store un kabul etmediği architectureda buildlar varsa build phases a bu run scripti ekle, tüm podlar için bu temizliği yapacak. (örneğin 32bit için buildlar varsa siliyor)
+
+
+APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+    FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+    FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+    echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+    EXTRACTED_ARCHS=()
+
+    for ARCH in $ARCHS
+    do
+        echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+        lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+        EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+    done
+
+    echo "Merging extracted architectures: ${ARCHS}"
+    lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+    rm "${EXTRACTED_ARCHS[@]}"
+
+    echo "Replacing original executable with thinned version"
+    rm "$FRAMEWORK_EXECUTABLE_PATH"
+    mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+
+done
+
+## bu durum da aşağıdaki durumu doğuruyor Too many symbol files
+
+
+## ios appstore Too many symbol files - These symbols have no corresponding slice in any binary
+
+podfile a bunu ekledim.
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf'
+        end
+    end
+end
+
+
+https://stackoverflow.com/questions/25755240/too-many-symbol-files-after-successfully-submitting-my-apps
+
+-----
