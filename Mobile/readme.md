@@ -863,6 +863,8 @@ do
 
 done
 
+https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsupported-architecture-x86
+
 ## bu durum da aşağıdaki durumu doğuruyor Too many symbol files
 
 
