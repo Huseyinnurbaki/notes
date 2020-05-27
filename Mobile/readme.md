@@ -869,7 +869,6 @@ https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsuppor
 
 
 ## ios appstore Too many symbol files - These symbols have no corresponding slice in any binary
-
 podfile a bunu ekledim.
 
 post_install do |installer|
@@ -884,3 +883,46 @@ end
 https://stackoverflow.com/questions/25755240/too-many-symbol-files-after-successfully-submitting-my-apps
 
 -----
+
+## remove unneccessary architecture builds
+storeun kabul etgmediği buildları (32bit vs) çıkarıyor.
+ xcode run script
+
+
+ # Type a script or drag a script file from your workspace to insert its path.
+APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+
+# This script loops through the frameworks embedded in the application and
+# removes unused architectures.
+
+```sh
+
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+    FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+    FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+    echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+    EXTRACTED_ARCHS=()
+
+    for ARCH in $ARCHS
+    do
+        echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+        lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+        EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+    done
+
+    echo "Merging extracted architectures: ${ARCHS}"
+    lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+    rm "${EXTRACTED_ARCHS[@]}"
+
+    echo "Replacing original executable with thinned version"
+    rm "$FRAMEWORK_EXECUTABLE_PATH"
+    mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+
+done
+```
+
+found it on Daniel Kennett's blog.
+
+bunu ekledkten sonra aşağıda "run script only when installing" seçmek gerekiyor.Yoksa örneğin 32 bitlik cihazlar için bulunan buildlar silinince simulatorlerde ilgili frameworkler çalışmayacak. 
