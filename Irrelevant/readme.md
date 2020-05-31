@@ -1,1 +1,0 @@
-spelunk: To spelunk is to explore natural caves. Geologists do a lot of spelunking.

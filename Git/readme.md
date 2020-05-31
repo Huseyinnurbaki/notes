@@ -115,3 +115,9 @@ add .gitattributes to the project
 *.js linguist-vendored=false
 
 now it is js.
+
+---
+
+# empty commit 
+
+git commit --allow-empty -m "Trigger rebuild"

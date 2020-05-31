@@ -54,3 +54,14 @@ The InteractionManager is the native module responsible for deferring the execut
 
 InteractionManager is very important because React Native has two threads. There is a JavaScript UI thread which handles drawing updates to the screen, and another thread used for all tasks not on the UI thread. Since there is only one thread for making UI updates, it can get overloaded and drop frames, especially during things like navigation screen animations. We use the InteractionManager to ensure that our function is executed after these animations occur so that we do not drop frames on the UI thread. Trying to draw a new screen while it is being animated is often too much for the thread to handle.
 
+---
+
+# Github Pages
+
+repoyu açanın mutlaka commit atması şart
+
+domaine a kaydı ekleniyor 4 adet
+domaindeki www cname i username.github.io yapıyorum
+eklenecek adresleri bulmak için
+
+dig username.github.io
