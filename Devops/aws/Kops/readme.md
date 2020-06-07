@@ -37,3 +37,19 @@ aws s3api put-bucket-encryption --bucket prefix-hus-com-state-store --server-sid
 Creating your first cluster tamamlayınca 10 dk civarı nodeları kaldırması sürüyor. 
 
 kops validate cluster komutu ile takip edebiliyoruz durumu. Veya doğru contextteysek kubectl get po da cluster hakkında ipucu verebilir.
+
+
+-----
+
+# Deleteing cluster
+
+if you delete s3 bucket you cannot delte cluster w using kops.
+If done, go to ec2 dashboard.
+
+Delete autoscaling configs.
+
+normally just enter 
+
+  kops delete cluster --name=k8s.cluster.site --yes
+see options:
+https://github.com/kubernetes/kops/blob/master/docs/cli/kops_delete_cluster.md
