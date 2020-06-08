@@ -95,4 +95,65 @@ Introduce a ‘values’ prize. Not a serious prize, but a fun prize that someti
 The ‘whoops we dropped the value’ prize provides a way of demonstrating courage, but also highlighting when we missed a value. Of course, this prize could end up being a very negative thing so it should always be delivered in a fun way without negative implications.
 
 Getting external managers or stakeholders to demonstrate to the team a value and what it means to them.
- 
+
+
+---
+
+https://www.scrum.org/resources/intralinks-case-study-scrum-reboot-time-values
+
+ Scrum Values real by focusing on six principles:
+• Self-organization
+• 7 +/- 2 team size
+• Done means done
+• Empowered Product Owners
+• Servant-leader Scrum Masters
+• Scrum Team ownership for adaption
+• The delivery of business value
+
+
+Commitment
+We don’t need no stinking Sprint
+Retrospective!
+
+Courage
+The Sprint Report?
+
+Focus
+Daily Scrum for everybody?
+
+Openness
+The Scrum Manager? / master
+
+Respect
+The Product Steward?
+
+
+The three pillars of Scrum are transparency,
+inspection, and adaptation,
+
+Only when the principle of owning
+adaptation was taken seriously
+did the Sprint Retrospective
+become an opportunity to improve.
+
+-----
+
+https://www.scrum.org/resources/blog/5-metaphors-explore-value-scrum-values
+
+-----
+https://guntherverheyen.com/2013/05/03/theres-value-in-the-scrum-values/
+
+A good illustration is how I’ve observed some teams doing their Daily Scrum. Everybody answers the 3 questions (Done? Planned? Impediments?), in a slightly spontaneous way or -worst case- when asked for by a Scrum Master-pretend. But does the team use the meeting to share information, to collaborate in re-planning their work for that day, making sure they don’t get out of line with one another for more than 24 hours, to get the most out of the Sprint, in moving forward to the Sprint goal? Or do they talk to the board instead of to each other? Do they only use the meeting to make sure that the board holds all their micro-tasks so their work is logged?
+
+commitment- is about dedication
+focus - time-boxing of Scrum allow us to focus.
+Openness -  Respect
+
+Courage - We show courage in not building stuff that nobody wants. Courage in admitting requirements will never be perfect and that no plan can capture reality and complexity. Courage to consider change as a source of inspiration and innovation. Courage to not deliver undone software. Courage in sharing all possible information (transparency) that might help the team and the organization. Courage in admitting that nobody is perfect. Courage to change direction. Courage to share risks and benefits. Courage to promote Scrum and empiricism to deal with complexity.
+
+----
+https://www.scrum.org/resources/blog/4-ways-coach-scrum-values
+
+excellent
+
+----
