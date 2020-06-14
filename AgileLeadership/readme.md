@@ -157,3 +157,74 @@ https://www.scrum.org/resources/blog/4-ways-coach-scrum-values
 excellent
 
 ----
+
+https://www.scrum.org/resources/truth-about-job-titles-scrum
+
+![alt text](./img/summary.png "summary")
+
+----
+
+https://www.scrum.org/resources/characteristics-great-scrum-team-0
+
+# Characteristics of a Great Scrum Team
+
+  The Product Owner is responsible for:
+- Developing and maintaining a product vision and market strategy;
+- Product management;
+- Ordering and managing the Product Backlog;
+- Involving stakeholders and end-users in Product Backlog refinement and backlog
+management;
+- Alignment with other Product Owners when needed from an overall product, company or
+customer perspective...
+
+Devamında product owner nasıl olmalı anlattılıyor, ne kovalamalı, paylaşımı, backlog yönetimi, vs. güzek bir açıklama var. 
+
+
+Knows the 5 levels of Agile planning. Within Agile, planning is done continuously. Every
+product needs a vision (level 1) which will provide input to the product roadmap (level 2). The
+roadmap is a long range strategic plan of how the business would like to see the product
+evolve. Based on the roadmap, market conditions and status of the product the Product
+Owner can plan releases (level 3). During the Sprint Planning (level 4) the team plan and agree
+on Product Backlog Items they are confident they can complete during the Sprint and help
+them achieve the Sprint Goal. The Daily Scrum (level 5) is used to inspect and adapt the team's
+progress towards realizing the Sprint Goal.
+
+
+The Scrum Master acts as a:
+- Servant Leader whose focus is on the needs of the team members and those they serve (the
+customer), with the goal of achieving results in line with the organization’s values, principles,
+and business objectives3
+;
+- Facilitator by setting the stage and providing clear boundaries in which the team can
+collaborate;
+- Coach coaching the individual with a focus on mindset and behavior, the team in continuous
+improvement and the organization in truly collaborating with the Scrum Team;
+- Conflict navigator to address unproductive attitudes and dysfunctional behaviors;
+- Manager responsible for managing impediments, eliminate waste, managing the process,
+managing the team’s health, managing the boundaries of self-organization, and managing the
+culture;
+- Mentor that transfers agile knowledge and experiences to the team;
+- Teacher to ensure Scrum and other relevant methods are understood and enacted.
+
+
+Development Teams have the following characteristics:
+- Self-organizing. They decide how to turn Product Backlog Items into working solutions.
+- Cross-functional. As a whole, they’ve got all the skills necessary to create the product
+Increment.
+- No titles. Everyone is a Developer, no one has a special title.
+- No sub-teams in the Development Team.
+- Committed to achieving the Sprint Goal and delivering a high quality increment
+
+
+---------
+https://www.scrum.org/resources/blog/why-you-need-only-one-product-owner
+
+# Why you need only one po
+
+
+“Multiple Scrum Teams often work together on the same product. One Product Backlog is used to describe the upcoming work on the product.” (Scrum Guide)
+
+
+need of multiple product owners
+downsizes
+why you should have one
