@@ -228,3 +228,38 @@ https://www.scrum.org/resources/blog/why-you-need-only-one-product-owner
 need of multiple product owners
 downsizes
 why you should have one
+
+----
+https://www.scrum.org/resources/blog/5-powerful-things-about-sprint
+
+# 5 Powerful Things About the Sprint
+
+The purpose of a Sprint is to create a potentially releasable product Increment of value to the organization.  It’s that simple.
+## Focus
+
+What value is to be delivered is guided by the Sprint Goal, which does not change during the Sprint.  Because… well, focus.
+
+## Predictability
+
+a team that is using Scrum well will be predictable in delivering a “Done” Increment every Sprint.
+
+Sprints have a consistent cadence.  This consistent cadence helps a Scrum Team understand what they are capable of delivering in a period of time.  As a Scrum Team understands this and continues to work together, they can better forecast delivery expectations.
+
+## Control
+
+o the real driver of the length of a Sprint is how often the business needs to inspect the Increment and adapt the direction based on new information.
+
+## Freedom
+
+Sometimes there will be failure.  In fact, failure is a part of learning.  The question is how big of an impact that failure will have. A Sprint limits the impact of failure to the time-box of the Sprint.
+
+
+----
+
+# Sprint Review
+https://www.scrum.org/resources/what-sprint-review - very good
+Mobile aoolication example. While stakeholders examining the new features, developers must notice if verything is going well, or capture new idea fromm shs. 
+Po Asks shs, this is a great idea, this is the backlog, what can we switch it with ? 
+By this way, stakeholders collaborate into process.
+
+Goal of the sprint review is strategic planning. 
