@@ -263,3 +263,55 @@ Po Asks shs, this is a great idea, this is the backlog, what can we switch it wi
 By this way, stakeholders collaborate into process.
 
 Goal of the sprint review is strategic planning. 
+
+----
+
+# Nexus Guide (scaling scrum)
+
+https://www.scrum.org/resources/online-nexus-guide
+
+Nexus (n): a relationship or connection between people or things
+
+Nexus is a framework consisting of roles, events, artifacts, and rules that bind and weave together the work of approximately three to nine Scrum Teams working on a single Product Backlog to build an Integrated Increment that meets a goal.
+
+
+![alt text](./img/nexus.png "summary")
+
+
+### Roles: 
+A new role, the Nexus Integration Team, exists to coordinate, coach, and supervise the application of Nexus and the operation of Scrum so the best outcomes are derived. The Nexus Integration Team consists of the Product Owner, a Scrum Master, and Nexus Integration Team Members.
+
+### Artifacts: 
+All Scrum Teams use the same, single Product Backlog. As the Product Backlog items are refined and made ready, indicators of which team will do the work inside a Sprint are made transparent. A new artifact, the Nexus Sprint Backlog, exists to assist with transparency during the Sprint. All Scrum Teams maintain their individual Sprint Backlogs.
+### Events:
+Events are appended to, placed around, or replace (in the case of the Sprint Review) regular Scrum events to augment them. As modified, they serve both the overall effort of all Scrum Teams in the Nexus, and each individual team.
+
+## Nexus Process Flow
+
+### Refine the Product Backlog: 
+The Product Backlog needs to be decomposed so that dependencies are identified and removed or minimized. Product Backlog items are refined into thinly sliced pieces of functionality and the team likely to do the work should be identified.
+
+### Nexus Sprint Planning:
+Appropriate representatives from each Scrum Team meet to discuss and review the refined Product Backlog. They select Product Backlog items for each team. Each Scrum Team then plans its own Sprint, interacting with other teams as appropriate. The outcome is a set of Sprint Goals that align with the overarching Nexus Sprint Goal, each Scrum Team's Sprint Backlog and a single Nexus Sprint Backlog. The Nexus Sprint Backlog makes the work of all Scrum Team's selected Product Backlog items and any dependencies transparent.
+### Development work: 
+All teams frequently integrate their work into a common environment that can be tested to ensure that the integration is done.
+### Nexus Daily Scrum: 
+Appropriate representatives from each Development Team meet daily to identify if any integration issues exist. If identified, this information is transferred back to each Scrum Team’s Daily Scrum. Scrum Teams then use their Daily Scrum to create a plan for the day, being sure to address the integration issues raised during the Nexus Daily Scrum.
+### Nexus Sprint Review: 
+The Nexus Sprint Review is held at the end of the Sprint to provide feedback on the Integrated Increment that a Nexus has built over the Sprint. All individual Scrum Teams meet with stakeholders to review the Integrated Increment. Adjustments may be made to the Product Backlog.
+### Nexus Sprint Retrospective: 
+Appropriate representatives from each Scrum Team meet to identify shared challenges. Then, each Scrum Team holds individual Sprint Retrospectives. Appropriate representatives from each team meet again to discuss any actions needed based on shared challenges to provide bottom-up intelligence.
+
+### Nexus Sprint Goal
+The Nexus Sprint Goal is an objective set for the Sprint. It is the sum of all the work and Sprint Goals of the Scrum Teams within the Nexus. The Nexus should demonstrate the functionality that it has “Done” developed to achieve the Nexus Sprint Goal at the Nexus Sprint Review in order to receive stakeholder feedback.
+
+------
+
+
+# Developing People & Teams
+
+## Self Organizing Teams
+
+https://hbr.org/1986/01/the-new-new-product-development-game
+
+## 
