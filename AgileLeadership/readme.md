@@ -314,4 +314,25 @@ The Nexus Sprint Goal is an objective set for the Sprint. It is the sum of all t
 
 https://hbr.org/1986/01/the-new-new-product-development-game
 
-## 
+3 tane daha var
+
+## Faciliation
+
+https://www.scrum.org/resources/blog/agile-coach-toolkit-4-effective-facilitation
+
+Ensure that everyone participating in the discussion understand its purpose. You would need to set the context at the beginning and may have to reiterate once in a while when you see that the discussions are digressing from the context.
+Working agreement at the beginning will help. E.g., mobile/ electronics usage,  punctuality, participant expectations, etc. Listing the Scrum values, especially if you are going to deal with conflict resolution may help the discussion.
+If the event/ meeting is not interactive, you may want to spend some time take some time to find the Root Cause.
+Create a safe environment for people to speak by ensuring that people focus on task at hand rather than pointing fingers. Immediately interject if there are any personal attacks.
+Use Timeboxing to ensure that discussions are productive.
+Balance the discussions so that introverts feel included in the discussions.
+As a facilitator, you need to read the mood in the room to take breaks at regular intervals to keep the energy level high for productive discussion.
+Be neutral in your stance and do not take sides (beware of your implicit bias during heated discussions)
+
+https://www.scrum.org/resources/blog/powerful-technique-improve-your-scrum-events
+
+Steps to use this Liberating Structure
+Start with 1 minute of silent self-reflection by individuals on a shared challenge, framed as a question;
+Take 2 minutes to generate ideas in pairs, building on ideas from self-reflection;
+Create groups of four and use 4 minutes to share and develop ideas that you’ve discussed within your pair. Notice similarities and differences.
+Take 5 minutes to share insights, ideas and takeaways by asking “What is one idea that stood out in your conversation?”. Each group shares one important idea. Repeat cycle as needed.
