@@ -106,3 +106,4 @@ https://2.3.docs.portworx.com/portworx-install-with-kubernetes/operate-and-maint
 
 https://2.3.docs.portworx.com/portworx-install-with-kubernetes/storage-operations/create-pvcs/resize-pvc/
 
+https://2.3.docs.portworx.com/portworx-install-with-kubernetes/autopilot/
