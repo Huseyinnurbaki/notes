@@ -85,8 +85,16 @@ IOPS Required from EBS Volume
 
 Every volume created here refers to pools. 
 
+## Use at least 3 etcd instances. Use odd numbers for chorum. Chorum is minimum amount for etcd instances need to be running for fault tolerance. 
+If we had 6 instances and network parition occured evenly, since the quorum is 4 for 6 instances, division is 3-3  and cluster fails. 
+https://kodekloud.com/courses/770124/lectures/13961634
+quorum ? n/2+1
+if 2.5 take whole (2)
+optimal is 5 etcd instances
 
+## volume placement strategy
 
+https://kodekloud.com/courses/770124/lectures/14002777
 
 # Links
 
@@ -107,3 +115,18 @@ https://2.3.docs.portworx.com/portworx-install-with-kubernetes/operate-and-maint
 https://2.3.docs.portworx.com/portworx-install-with-kubernetes/storage-operations/create-pvcs/resize-pvc/
 
 https://2.3.docs.portworx.com/portworx-install-with-kubernetes/autopilot/
+
+https://2.3.docs.portworx.com/concepts/update-geography-info/
+
+https://2.3.docs.portworx.com/portworx-install-with-kubernetes/operate-and-maintain-on-kubernetes/cluster-topology/
+
+https://2.3.docs.portworx.com/concepts/pool-caching/
+
+https://2.3.docs.portworx.com/concepts/class-of-service/
+
+https://2.3.docs.portworx.com/portworx-install-with-kubernetes/storage-operations/create-pvcs/volume-placement-strategies/
+
+https://2.3.docs.portworx.com/cloud-references/security/kubernetes/shared-secret-model/
+
+https://2.3.docs.portworx.com/reference/cli/self-signed-tokens
+
