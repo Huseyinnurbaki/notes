@@ -336,3 +336,45 @@ Start with 1 minute of silent self-reflection by individuals on a shared challen
 Take 2 minutes to generate ideas in pairs, building on ideas from self-reflection;
 Create groups of four and use 4 minutes to share and develop ideas that you’ve discussed within your pair. Notice similarities and differences.
 Take 5 minutes to share insights, ideas and takeaways by asking “What is one idea that stood out in your conversation?”. Each group shares one important idea. Repeat cycle as needed.
+
+----
+
+https://www.scrum.org/resources/blog/balancing-autonomy-accountability
+
+many senior leaders have shared with Radically a worrying concern. It is happening so much that it is becoming a pattern.  They are telling us, often with hushed voices, that they feel they cannot ask important business questions such as “when do you think this will be done?” or 
+“how is cost tracking?”  or “will we hit our launch date?”. When they do ask these questions, they get proudly shunned and told that that these questions "aren't agile".  
+
+Don’t accept Cupcake Agile. Yes, autonomy plays a critical role in reshaping our workplaces, but don’t forget to balance autonomy with accountability.
+
+-----
+
+https://www.scrum.org/resources/blog/leading-high-performing-teams
+
+pizza chef
+
+I would regularly have staff coming to work early, working unpaid, just because they liked being there.
+
+How on earth did we achieve this?
+
+Reflecting back, I can see some clear patterns:
+
+Goal We had a clear objective – to provide the most awesome casual dining experience in Christchurch in a friendly, fun environment.
+Leadership: at 23 years old, with less than a year of practical chef experience under my belt, I was not in a position to tell others what to do. I had never done this before, so how could I? All I could do was lead by example. I worked hard and expected others to also. We were largely self-managing.
+Culture: we created a culture of extreme teamwork by always having each other’s backs. If the chefs got a lull in:  work, we helped the front of house staff, and vice versa. This was never questioned. It was how we rolled. When introducing new staff, we’d focus on the team culture and would only introduce one or two new people at a time. It created trust and courage as a core group value.
+Continual improvement: we would hold what I would now call a retrospective every night. We’d have a couple of beers and talk through the how the evening had gone, what worked, what hadn’t and what we could do better.
+Transparency the entire operation, kitchen, dishes and all, could be viewed by the public the entire time. Nothing was hidden.
+Rapid experimentation – we would constantly try new ideas as “specials”, gaining valuable customer feedback as we went.
+Fun – we had a lot of fun together as group.
+The result was a team that could turn over an 80-seat restaurant 6 or more times in a single evening without a glitch. That's close to 500 people and we could do this 7 days a week if needed.
+
+
+
+. It isn’t about Agile. It is about the mindset, the environment and the culture required for high performance.
+
+
+
+----
+
+## Cynefin F (cunevin)
+
+https://www.youtube.com/watch?v=5mqNcs8mp74
