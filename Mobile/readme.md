@@ -571,7 +571,11 @@ appdelegate dinamik olarak homeadresini bulamazsa jsCodeLocation ı yukarıdaki 
 # ANDROID
 
 ---------
+# ADB Reverse (physical device fails to connect debugger)
 
+$ adb reverse tcp:8081 tcp:8081 
+
+---
 
 Android  android/build.gradle dizininde
 

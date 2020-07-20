@@ -121,3 +121,13 @@ now it is js.
 # empty commit 
 
 git commit --allow-empty -m "Trigger rebuild"
+
+---
+
+# total number of commits among all branches
+
+git rev-list --all --count
+
+
+# number of commits of each author
+
