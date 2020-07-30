@@ -30,3 +30,6 @@ lazygitpush() {
 dkn() {
     d rm -f $(d container ls --last $1)
 }
+
+export PS1="\W \$"
+// hides username etc in terminal
