@@ -44,3 +44,10 @@ sonar-scanner  -Dsonar.login=?????????????????????
 Bu login keyi sonar ayağa kaldırıp proje oluşturunca generate ediliyor. Bir de o aşamada bilgisayara/cihaza indirilmesi gereken sonarqube paketini gösteriyor. onun bin folderını pathe eklemek gerekiyor.
 
 
+-----
+swift normalde ücretli, open source versiyonu var
+
+https://github.com/Idean/sonar-swift
+
+http://fauxpasapp.com/docs/
+path export etme
