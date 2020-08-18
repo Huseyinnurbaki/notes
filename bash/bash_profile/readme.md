@@ -1,3 +1,16 @@
+export PS1="\W \$"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_261, x86_64`
+export PATH=$PATH:/Users/huseyinnurbaki/tools/sonar-scanner-4.4.0.2170-macosx/bin
+export PATH=$PATH:/Users/huseyinnurbaki/tools/sonar-scanner-msbuild-4.10.0.19059-net46/sonar-scanner-4.4.0.2170/bin
+export PATH=$PATH:/Users/huseyinnurbaki/tools/sonar-scanner-msbuild-4.10.0.19059-net46
+export PATH=$PATH:/usr/bin
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/Users/huseyinnurbaki/tools/xcpretty/bin
+export PATH=${PATH}:/opt/local/bin
+export PATH=${PATH}:/Library/Developer/CommandLineTools
+export PATH=${PATH}:/Users/huseyinnurbaki/Library/Android/sdk/platform-tools
+export PATH=$PATH:$HOME/.npm-global/bin
+
 alias k='kubectl'
 alias i='istioctl'
 alias d='docker'
@@ -16,10 +29,7 @@ alias notes='code  ~/dev/hus/notes'
 alias savemb='source ~/.bash_profile'
 alias kgp='k get po'
 alias kgs='k get svc'
-
-dkn() {
-    d rm -f $(d container ls --last $1)
-}
+alias runsonarios='/Users/huseyinnurbaki/run-sonar-swift.sh'
 
 lazygitpush() {
     git add .
@@ -30,6 +40,13 @@ lazygitpush() {
 dkn() {
     d rm -f $(d container ls --last $1)
 }
+
+
+md () {
+ mkdir -p $1
+ cd $1
+}
+
 
 export PS1="\W \$"
 // hides username etc in terminal
