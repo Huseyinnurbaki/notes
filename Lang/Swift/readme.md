@@ -20,3 +20,13 @@
     attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red , range: NSRange(location: textFirstPart.count + 1, length: textMiddlePart.count))
 
     desc.attributedText = attributedString
+
+
+# webview
+
+    https://www.hackingwithswift.com/read/4/2/creating-a-simple-browser-with-wkwebview
+
+
+# Great input validation repo
+
+https://github.com/Arrlindii/AAValidators
