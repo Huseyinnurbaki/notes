@@ -930,3 +930,14 @@ done
 found it on Daniel Kennett's blog.
 
 bunu ekledkten sonra aşağıda "run script only when installing" seçmek gerekiyor.Yoksa örneğin 32 bitlik cihazlar için bulunan buildlar silinince simulatorlerde ilgili frameworkler çalışmayacak. 
+
+-----
+
+xcode defining conditional configfile variable
+https://americanexpress.io/care-and-feeding-of-xcode-configurations/
+93987/how-to-append-values-in-xcconfig-variables
+
+changing app icon for different environments and more
+https://nshipster.com/xcconfig/
+
+---------
