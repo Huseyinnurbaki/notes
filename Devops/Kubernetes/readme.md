@@ -199,3 +199,9 @@ $kubectl describe pods/<podname> | grep ‘Failed'
 
 # azure match acr aks
 https://docs.microsoft.com/en-us/azure/aks/cluster-container-registry-integration#create-a-new-aks-cluster-with-acr-integration
+
+-----
+
+# ingress ip 
+
+kubectl get ingress --watch
