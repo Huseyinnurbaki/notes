@@ -47,7 +47,7 @@ nslookup my-nginx
 switch ns without kubens 
 
 ```sh
-kubectl config set-context --current --namespace=tiklagelsin-dev
+kubectl config set-context --current --namespace=myns
 ```
 
 current context
