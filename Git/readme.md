@@ -120,7 +120,7 @@ now it is js.
 
 # empty commit 
 
-git commit --allow-empty -m "Trigger rebuild"
+git commit --allow-empty -m "Test"
 
 ---
 

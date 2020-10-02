@@ -158,7 +158,7 @@ Sonrasında yeniden başlatınca durum çözüldü.
 port-forward a service 
 
 
-k port-forward svc/whoami-svc -n playground  7888:7888 
+k port-forward svc/whoami-svc  8000:8000 
 
 
 ----
@@ -166,3 +166,30 @@ k port-forward svc/whoami-svc -n playground  7888:7888
 sh pod e.g. busybox
 
 k run -it   --image=busybox test sh
+
+
+-----
+
+# calico 
+
+https://www.youtube.com/watch?v=131_TIa_ftI
+
+
+# accessing private registry
+
+
+svc account
+ secret oluştur https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account
+
+
+kubectl create secret docker-registry SECRETNAAME --docker-server=<registy> --docker-username=<usernanme> --docker-password=<pwd> --docker-email=<email>
+
+
+kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "SECRETNAAME"}]}’
+
+----
+
+
+# get failed pod fail reason
+
+$kubectl describe pods/<podname> | grep ‘Failed'
