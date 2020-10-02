@@ -47,7 +47,7 @@ nslookup my-nginx
 switch ns without kubens 
 
 ```sh
-kubectl config set-context --current --namespace=myns
+kubectl config set-context --current --namespace=tiklagelsin-dev
 ```
 
 current context
@@ -193,3 +193,9 @@ kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "SECRETN
 # get failed pod fail reason
 
 $kubectl describe pods/<podname> | grep ‘Failed'
+
+
+---
+
+# azure match acr aks
+https://docs.microsoft.com/en-us/azure/aks/cluster-container-registry-integration#create-a-new-aks-cluster-with-acr-integration
