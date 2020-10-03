@@ -29,6 +29,13 @@ alias notes='code  ~/dev/hus/notes'
 alias savemb='source ~/.bash_profile'
 alias kgp='k get po'
 alias kgs='k get svc'
+alias kgp='k get po'
+alias kgs='k get svc'
+alias kgns='k get ns'
+alias kgd='k get deployments'
+alias kgall='k get all'
+alias kging='k get ingress --watch'
+
 alias runsonarios='/Users/huseyinnurbaki/run-sonar-swift.sh'
 
 lazygitpush() {
@@ -36,6 +43,19 @@ lazygitpush() {
     git commit -m "$*"
     git push
 }
+
+kfl() {
+    k logs --follow $1
+}
+
+kswitch () {
+    kubectl config set-context --current --namespace=$1
+}
+
+kdp() {
+    kubectl delete po $1
+}
+
 
 dkn() {
     d rm -f $(d container ls --last $1)

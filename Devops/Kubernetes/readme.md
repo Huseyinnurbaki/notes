@@ -47,7 +47,7 @@ nslookup my-nginx
 switch ns without kubens 
 
 ```sh
-kubectl config set-context --current --namespace=myns
+kubectl config set-context --current --namespace=sonarqube
 ```
 
 current context
@@ -205,3 +205,7 @@ https://docs.microsoft.com/en-us/azure/aks/cluster-container-registry-integratio
 # ingress ip 
 
 kubectl get ingress --watch
+
+# rollout foır latest tag
+
+kubectl rollout restart deployment/<deployment_name>
