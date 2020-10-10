@@ -45,8 +45,8 @@ docker build -t hhaluk/tuts .
 
 docker build -t hhaluk/node--- .
 
-docker run -p 30046:8080 -d hhaluk/---
-
+docker run -p 4000:4000 -d ataexpress.azurecr.io/service-catalog:latest
+ataexpress.azurecr.io/service-catalog:latest
 ----
 
 ## display running processes of a container 
@@ -124,3 +124,7 @@ services:
       - WAIT_HOST_CONNECT_TIMEOUT=30
 
 -------
+
+# env vs export
+
+https://stackoverflow.com/questions/33379393/docker-env-vs-run-export
