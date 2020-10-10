@@ -209,3 +209,11 @@ kubectl get ingress --watch
 # rollout foır latest tag
 
 kubectl rollout restart deployment/<deployment_name>
+
+# print env variables of a pod
+
+kubectl exec -it <podname> -- sh
+
+$ printenv
+
+$ 
