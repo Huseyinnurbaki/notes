@@ -90,3 +90,10 @@ ilgili dosyay nexussa yüklüyoruz. (targz)
 
 ----
 
+# google hat webhok curl
+
+curl \
+    -X POST \
+    -H 'Content-Type: application/json' \
+    'https://chat.googleapis.com/...&thread_key=T12345' \
+    -d '{"text": "Hello!"}'
