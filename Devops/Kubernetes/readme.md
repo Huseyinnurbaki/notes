@@ -216,4 +216,6 @@ kubectl exec -it <podname> -- sh
 
 $ printenv
 
-$ 
+# copy secret from another ns to another ns
+
+ kubectl get secret <secretname> --namespace=<source_ns> --export -o yaml | kubectl apply --namespace=<target_ns> -f -
