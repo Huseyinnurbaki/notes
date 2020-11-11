@@ -219,3 +219,15 @@ $ printenv
 # copy secret from another ns to another ns
 
  kubectl get secret <secretname> --namespace=<source_ns> --export -o yaml | kubectl apply --namespace=<target_ns> -f -
+
+
+# create secret
+
+
+kubectl create secret -n somens generic some-secret \
+  --from-literal=keyname='password'
+
+
+kubectl get secret some-secret -o jsonpath='{.data}'
+
+$echo 'decoded' | base64 --decode
