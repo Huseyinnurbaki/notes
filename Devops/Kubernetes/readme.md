@@ -228,6 +228,10 @@ kubectl create secret -n somens generic some-secret \
   --from-literal=keyname='password'
 
 
-kubectl get secret some-secret -o jsonpath='{.data}'
+kubectl get secret redis-pwd  -o jsonpath='{.data}'
 
 $echo 'decoded' | base64 --decode
+
+# patch exernal ip
+
+kubectl patch svc some-svc -p '{"spec":{"externalIPs":[x.x.x.x"]}}'
