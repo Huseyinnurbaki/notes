@@ -22,3 +22,17 @@ https://docs.mongodb.com/manual/reference/method/
 rs.secondaryOk() <---
 then 
 show dbs
+
+
+# update user pwd
+
+sshow dbs
+use dbIWantToUpdateUsersPwd
+db.changeUserPassword("user", "newPwd")
+
+# register users to related dbs omly
+
+
+db.collection.find()
+
+db.users.find().pretty()
