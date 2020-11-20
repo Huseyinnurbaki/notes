@@ -941,3 +941,23 @@ changing app icon for different environments and more
 https://nshipster.com/xcconfig/
 
 ---------
+
+
+# fbsdk
+ios app id android hash
+
+
+https://learn.apptentive.com/knowledge-base/finding-your-app-store-id/
+
+https://stackoverflow.com/questions/7746019/native-ios-app-what-do-i-put-in-facebooks-developer-iphone-app-store-id-unde#:~:text=If%20you%20login%20to%20iTunes,be%20under%20%22Apple%20Id%22.&text=If%20you're%20app%20is,ID%20in%20Facebook%20Developers%20dashboard.
+
+https://i.stack.imgur.com/m87mF.png
+
+settingsdeki id 
+
+https://stackoverflow.com/questions/7506392/how-to-create-android-facebook-key-hash
+
+keytool -exportcert -alias <aliasName> -keystore <keystoreFilePath> | openssl sha1 -binary | openssl base64
+
+note : NOTE : Make sure that in both cases it asks for a password. If it does not ask for a password, it means that something is wrong in the command. Password for debug.keystore is "android" and for release you have to enter password that you set during create keystore.
+

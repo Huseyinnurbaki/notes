@@ -36,3 +36,6 @@ db.changeUserPassword("user", "newPwd")
 db.collection.find()
 
 db.users.find().pretty()
+
+
+db.users.find().pretty()
