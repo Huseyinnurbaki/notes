@@ -242,3 +242,10 @@ echo "Happy Coding !"
 let endingSecond=$(date +%H)*3600+$(date +%M)*60+$(date +%S) şu anısaniye cinsinden
 
 exit 1 terminali kapatmadan scripti kırmak için
+
+# beautify json
+
+```bash
+$ cat <someJson> | jq
+
+```
