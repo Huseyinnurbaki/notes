@@ -961,3 +961,10 @@ keytool -exportcert -alias <aliasName> -keystore <keystoreFilePath> | openssl sh
 
 note : NOTE : Make sure that in both cases it asks for a password. If it does not ask for a password, it means that something is wrong in the command. Password for debug.keystore is "android" and for release you have to enter password that you set during create keystore.
 
+----
+
+# Ios infoplist localization
+
+https://medium.com/@guerrix/info-plist-localization-ad5daaea732a
+
+File name should be InfoPlist.strings otherwise it won't match. Plus keys inside infoplist are overriden.
