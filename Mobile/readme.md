@@ -966,5 +966,5 @@ note : NOTE : Make sure that in both cases it asks for a password. If it does no
 # Ios infoplist localization
 
 https://medium.com/@guerrix/info-plist-localization-ad5daaea732a
-
+https://mobikul.com/how-to-localize-the-plist-file/
 File name should be InfoPlist.strings otherwise it won't match. Plus keys inside infoplist are overriden.
