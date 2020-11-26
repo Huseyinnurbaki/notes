@@ -38,15 +38,6 @@ build & tag with dockerfile
 
 docker build -t hhaluk/tuts .
 
-
-
---------
-
-
-docker build -t hhaluk/node--- .
-
-docker run -p 4000:4000 -d ataexpress.azurecr.io/service-catalog:latest
-ataexpress.azurecr.io/service-catalog:latest
 ----
 
 ## display running processes of a container 
