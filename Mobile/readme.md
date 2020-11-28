@@ -968,3 +968,8 @@ note : NOTE : Make sure that in both cases it asks for a password. If it does no
 https://medium.com/@guerrix/info-plist-localization-ad5daaea732a
 https://mobikul.com/how-to-localize-the-plist-file/
 File name should be InfoPlist.strings otherwise it won't match. Plus keys inside infoplist are overriden.
+
+# Generate adaptive android appicon using Android Studio 
+
+https://dev.to/_s_farias/how-to-create-adaptive-icons-for-android-using-android-studio-459h
+
