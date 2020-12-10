@@ -973,3 +973,9 @@ File name should be InfoPlist.strings otherwise it won't match. Plus keys inside
 
 https://dev.to/_s_farias/how-to-create-adaptive-icons-for-android-using-android-studio-459h
 
+# Removing non-alphanumeric chars
+The following is the/a correct regex to strip non-alphanumeric chars from an input string:
+
+```javascript
+input.replace(/\W/g, '')
+```
