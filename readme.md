@@ -8,7 +8,7 @@
 ## [Bash](https://github.com/Huseyinnurbaki/notes/tree/master/Bash)
 ## [DataScience](https://github.com/Huseyinnurbaki/notes/tree/master/DataScience)
 ## [DB](https://github.com/Huseyinnurbaki/notes/tree/master/DB)
-## [Devops](https://github.com/Huseyinnurbaki/notes/tree/master/Devops)
+## [DevSecOps](https://github.com/Huseyinnurbaki/notes/tree/master/DevSecOps)
 ## [Git](https://github.com/Huseyinnurbaki/notes/tree/master/Git)
 ## [Lang](https://github.com/Huseyinnurbaki/notes/tree/master/Lang)
 ## [Mac](https://github.com/Huseyinnurbaki/notes/tree/master/Mac)

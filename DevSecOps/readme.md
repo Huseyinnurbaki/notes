@@ -3,8 +3,8 @@
 
 # DevSecOps
 
-## [Aws](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Aws)
-## [Azure](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Azure)
+## [Aws](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Platform/Aws)
+## [Azure](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Platform/Azure)
 ## [Docker](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Docker)
 ## [Fluentd](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Fluentd)
 ## [Istio](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Istio)
@@ -14,4 +14,5 @@
 ## [Openshift](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Openshift)
 ## [Portworx](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Portworx)
 ## [Redis](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Redis)
-## [Sonarqube](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Sonarqube)
+## [Terraform](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/Hashicorp/Terraform)
+## [Sonarqube](https://github.com/Huseyinnurbaki/notes/tree/master/Devops/DastSast/Sonarqube)
