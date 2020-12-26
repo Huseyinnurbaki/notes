@@ -979,3 +979,7 @@ The following is the/a correct regex to strip non-alphanumeric chars from an inp
 ```javascript
 input.replace(/\W/g, '')
 ```
+
+# import export 
+
+https://javascript.info/import-export
