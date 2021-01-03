@@ -983,3 +983,31 @@ input.replace(/\W/g, '')
 # import export 
 
 https://javascript.info/import-export
+
+----
+# react-native webp 
+
+react-native-fastimage
+
+```objectivec
+
+Go to your ios -> [App name folder] -> Edit AppDelegate.m
+
+#import "SDImageCodersManager.h"
+#import <SDWebImageWebPCoder/SDImageWebPCoder.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // . . .
+
+    [SDImageCodersManager.sharedManager addCoder:SDImageWebPCoder.sharedCoder];
+
+    // . . .
+}
+
+
+```
+
+https://github.com/DylanVann/react-native-fast-image/issues/522
+
+----
