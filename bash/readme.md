@@ -249,3 +249,9 @@ exit 1 terminali kapatmadan scripti kırmak için
 $ cat <someJson> | jq
 
 ```
+
+# add dir to PATH
+
+```bash
+$ export PATH=$PWD/bin:$PATH
+```
