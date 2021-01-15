@@ -235,3 +235,8 @@ $echo 'decoded' | base64 --decode
 # patch exernal ip
 
 kubectl patch svc some-svc -p '{"spec":{"externalIPs":[x.x.x.x"]}}'
+
+
+# access a svc in another ns
+
+<service-name>.<namespace-name>.svc.cluster.local
