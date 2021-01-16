@@ -233,10 +233,15 @@ kubectl get secret redis-pwd  -o jsonpath='{.data}'
 $echo 'decoded' | base64 --decode
 
 # patch exernal ip
-
+```
 kubectl patch svc some-svc -p '{"spec":{"externalIPs":[x.x.x.x"]}}'
-
+```
 
 # access a svc in another ns
 
 <service-name>.<namespace-name>.svc.cluster.local
+
+# decode secret
+```bash
+~ $kubectl get secrets/some_secret  --template={{.data.keyofthesecret}} | base64 -D
+```
