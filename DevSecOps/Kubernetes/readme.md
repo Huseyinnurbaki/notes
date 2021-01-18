@@ -222,9 +222,9 @@ $ printenv
 
 
 # create secret
+1.14
 
-
-kubectl create secret -n somens generic some-secret \
+kubectl create secret  generic some-secret \
   --from-literal=keyname='password'
 
 
@@ -232,6 +232,8 @@ kubectl get secret redis-pwd  -o jsonpath='{.data}'
 
 $echo 'decoded' | base64 --decode
 
+1.18
+kubectl get secret <secret-name> --namespace=<source-ns> -o yaml | sed 's/namespace: <source-ns>/namespace: <destination-ns>/g' | kubectl create -f -  
 # patch exernal ip
 ```
 kubectl patch svc some-svc -p '{"spec":{"externalIPs":[x.x.x.x"]}}'
