@@ -119,3 +119,17 @@ services:
 # env vs export
 
 https://stackoverflow.com/questions/33379393/docker-env-vs-run-export
+
+
+# Deleting Docker images not freeing up space (Docker for Mac)
+
+docker system prune
+docker system prune --volumes
+
+did not work. then go to
+
+Preferences > Resources > Advanced > Disk Image Location
+
+Delete Docker.raw, restart Docker for Mac
+
+https://stackoverflow.com/questions/30604846/docker-error-no-space-left-on-device
