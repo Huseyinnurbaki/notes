@@ -247,3 +247,23 @@ kubectl patch svc some-svc -p '{"spec":{"externalIPs":[x.x.x.x"]}}'
 ```bash
 ~ $kubectl get secrets/some_secret  --template={{.data.keyofthesecret}} | base64 -D
 ```
+
+----
+
+# ingress definition localhost
+
+```
+spec:
+  tls:
+  - hosts:
+    - kubernetes.docker.internal
+    secretName: somesecret
+  rules:
+  -  host: kubernetes.docker.internal
+     http:
+      paths:
+      - path: /
+        backend:
+          serviceName: someapp
+          servicePort: 8000
+```
