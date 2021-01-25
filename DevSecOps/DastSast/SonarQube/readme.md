@@ -51,3 +51,17 @@ https://github.com/Idean/sonar-swift
 
 http://fauxpasapp.com/docs/
 path export etme
+
+
+-----
+
+sonarqube restart
+
+http://<HOST>/api/system/restart
+
+basic auth
+username password
+
+----
+
+sonarqube 
