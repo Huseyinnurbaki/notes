@@ -65,3 +65,13 @@ username password
 ----
 
 sonarqube 
+
+-----
+
+# Fix corrupted index (elasticsearch)
+
+rm -rf data/es6
+
+this will force rebuild
+
+
