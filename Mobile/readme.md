@@ -1011,3 +1011,11 @@ Go to your ios -> [App name folder] -> Edit AppDelegate.m
 https://github.com/DylanVann/react-native-fast-image/issues/522
 
 ----
+
+
+How to fix “Error: Node Sass does not yet support your current environment: OS X 64-bit with Unsupported runtime (57)”
+# AKA broken sass after switching node env
+
+`
+npm rebuild node-sass
+`
