@@ -1,0 +1,32 @@
+apiVersion: v1
+data:
+  haproxy.cfg: |
+
+    global
+      log stdout format raw local0
+    defaults
+      log global
+      timeout client      120s
+      timeout server      120s
+      timeout connect      120s
+
+    frontend MyFrontend
+      bind	*:80
+      default_backend      TransparentBack_http
+
+    frontend MongoFrontEnd
+      bind	*:10255
+      default_backend    mongo_address
+
+    backend mongo_address
+      mode      tcp
+      server tg-mw-dbadmin tg-mw-dbadmin.mongo.cosmos.azure.com:10255
+
+    backend TransparentBack_http
+      mode      http
+      server MyWebServer x.x.x.x:8080
+
+kind: ConfigMap
+metadata:
+  name: haproxy-config
+  namespace: my_ns

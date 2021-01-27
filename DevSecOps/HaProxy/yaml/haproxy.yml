@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-proxy
+  labels:
+    app: my-proxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-proxy
+  template:
+    metadata:
+      labels:
+        app: my-proxy
+    spec:
+      containers:
+      - name: my-proxy
+        image: haproxy:2.3
+        ports:
+        - containerPort: 8080
+        - containerPort: 10255
+        volumeMounts:
+        - name: application-config
+          mountPath: /usr/local/etc/haproxy/haproxy.cfg
+          subPath: haproxy.cfg
+          readOnly: true  
+      volumes:
+      - name: application-config
+        configMap:
+          name: haproxy-config
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-proxy
+  labels:
+    app: my-proxy
+spec:
+  ports:
+  - port: 8080
+    name: any_dest_name
+    protocol: TCP
+  - port: 10255
+    name: any_dest_name
+    protocol: TCP
+  selector:
+    app: my-proxy
