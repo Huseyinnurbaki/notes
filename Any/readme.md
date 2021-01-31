@@ -90,10 +90,18 @@ ilgili dosyay nexussa yüklüyoruz. (targz)
 
 ----
 
-# google hat webhok curl
+# google chat webhok curl
 
 curl \
     -X POST \
     -H 'Content-Type: application/json' \
     'https://chat.googleapis.com/...&thread_key=T12345' \
     -d '{"text": "Hello!"}'
+
+
+
+
+# windows environment variables
+
+
+https://mkyong.com/java/how-to-set-java_home-on-windows-10/

@@ -120,7 +120,7 @@ now it is js.
 
 # empty commit 
 
-git commit --allow-empty -m "Test"
+git commit --allow-empty -m "Trigger Pipeline"
 
 ---
 
