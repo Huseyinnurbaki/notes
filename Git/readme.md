@@ -131,3 +131,7 @@ git rev-list --all --count
 
 # number of commits of each author
 
+
+# skip pre-commit hooks
+
+git commit -m "git" --no-verify
