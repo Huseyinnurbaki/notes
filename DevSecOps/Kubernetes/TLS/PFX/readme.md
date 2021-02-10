@@ -2,6 +2,7 @@
 
 
 https://dzone.com/articles/extract-crt-amp-key-file-from-pfx-file-in-a-minute
+https://www.xolphin.com/support/Certificate_conversions/Convert_pfx_file_to_pem_file
 https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets
 
 
@@ -20,3 +21,4 @@ openssl rsa -in tiklagelsindecrypted.key -pubout
 
 
 output should match each other
+
