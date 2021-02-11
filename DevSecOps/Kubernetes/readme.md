@@ -269,7 +269,7 @@ spec:
 ```
 
 
-# copy file inside of a pod from desktop
+# copy file from desktop to a directory inside pod
 
 
 ```bash
