@@ -217,12 +217,14 @@ kubectl exec -it <podname> -- sh
 $ printenv
 
 # copy secret from another ns to another ns
+1.14
 
  kubectl get secret <secretname> --namespace=<source_ns> --export -o yaml | kubectl apply --namespace=<target_ns> -f -
 
 
+1.18
+kubectl get secret <secret-name> --namespace=<source-ns> -o yaml | sed 's/namespace: <source-ns>/namespace: <destination-ns>/g' | kubectl create -f -  
 # create secret
-1.14
 
 kubectl create secret  generic some-secret \
   --from-literal=keyname='password'
@@ -232,8 +234,6 @@ kubectl get secret redis-pwd  -o jsonpath='{.data}'
 
 $echo 'decoded' | base64 --decode
 
-1.18
-kubectl get secret <secret-name> --namespace=<source-ns> -o yaml | sed 's/namespace: <source-ns>/namespace: <destination-ns>/g' | kubectl create -f -  
 # patch exernal ip
 ```
 kubectl patch svc some-svc -p '{"spec":{"externalIPs":[x.x.x.x"]}}'
@@ -266,4 +266,12 @@ spec:
         backend:
           serviceName: someapp
           servicePort: 8000
+```
+
+
+# copy file inside of a pod from desktop
+
+
+```bash
+kubectl cp ./file.ext my-pod-5d6786bf4-549j9:/usr/share/nginx/html/file.ext
 ```
