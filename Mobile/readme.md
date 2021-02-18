@@ -1019,3 +1019,15 @@ How to fix “Error: Node Sass does not yet support your current environment: OS
 `
 npm rebuild node-sass
 `
+
+----
+
+# Android Studio You have not accepted the license agreements of the following SDK components [duplicate]
+
+
+cd ~/Library/Android/sdk/tools/bin/
+./sdkmanager --licenses
+
+yes to all
+
+https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components
