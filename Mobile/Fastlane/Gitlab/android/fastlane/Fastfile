@@ -1,0 +1,37 @@
+
+  lane :bump_version_code do
+    ps_version_codes = google_play_track_version_codes(track: 'Theta')
+    ps_version_code = ps_version_codes.first
+
+    path = '../app/build.gradle'
+    re = /versionCode\s+(\d+)/ 
+    s = File.read(path)
+    versionCode = s[re, 1].to_i
+    s[re, 1] = (ps_version_code + 1).to_s
+    f = File.new(path, 'w')
+    f.write(s)
+    f.close
+
+  end
+
+  lane :clean do
+    gradle(
+    task: 'clean',
+  )
+  end
+
+  lane :generate_and_upload do |options|  # this helps to pass env var
+    gradle(
+    # print_command: false
+    task: 'assemble',
+    flavor: 'prod',
+    build_type: 'Release',
+    system_properties: {
+      'ENV_VAR_SP': options[:ENV_VAR_SP],
+      'ENV_VAR_KP':  options[:ENV_VAR_KP]
+    }
+  )
+    upload_to_play_store(track: 'Theta')
+
+  end
+

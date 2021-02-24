@@ -1,0 +1,32 @@
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+  GIT_DEPTH: 10
+
+stages:
+  - pack
+
+before_script:
+  - export ANDROID_SDK_ROOT=~/Library/Android/sdk
+  - export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+  - npm install
+  # - 'curl --output artifacts.zip --header "PRIVATE-TOKEN: ${ARTIFACT_DOWNLOAD_TOKEN}" "https://gitlab/api/v4/projects/<projectId>/jobs/artifacts/<BRANCH>/download?job=<job_name>"'
+  # - 'unzip artifacts.zip'
+  - 'npx pod-install'
+  # - 'unzip -o <file> -d <destination-folder>'
+
+
+generate_release_apk_ipa:
+  dependencies: []
+  stage: pack
+  script:
+    - cd android
+    - fastlane clean
+    - fastlane bump_version_code
+    - fastlane generate_and_upload ENV_VAR_SP:"${ENV_VAR_SP}" ENV_VAR_KP:"${ENV_VAR_KP}" # can be defined under Gitlab project variables
+    - cd ../ios
+    - fastlane gnrate_ipa 
+  tags:
+    - macbook_mini
+  only:
+    - master

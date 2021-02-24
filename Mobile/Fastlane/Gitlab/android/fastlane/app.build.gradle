@@ -1,0 +1,23 @@
+   signingConfigs {
+        release {
+            storeFile file('key-path')
+            storePassword System.getProperty('ENV_VAR_SP')
+            keyAlias ''
+            keyPassword System.getProperty('ENV_VAR_KP')
+        }
+    }
+
+    productFlavors {
+        prod {
+           ..
+        }
+        development {
+..
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            .....
+        }
+    }
