@@ -41,3 +41,12 @@ spec:
 
 
 # https://crontab.guru/#2_23_*_*_*
+
+
+
+
+-----
+
+# Docker run redis
+
+docker run -d  -p 6379:6379 redis
