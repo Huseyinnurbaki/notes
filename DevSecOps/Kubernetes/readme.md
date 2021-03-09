@@ -275,3 +275,38 @@ spec:
 ```bash
 kubectl cp ./file.ext my-pod-5d6786bf4-549j9:/usr/share/nginx/html/file.ext
 ```
+
+# Cron Job concurency
+
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  namespace: my-ns
+  name: my-cj
+spec:
+  schedule: "*/2 * * * *"
+  successfulJobsHistoryLimit: 1 # shows 1 succeeded max
+  failedJobsHistoryLimit: 1  # shows 1 failed max
+  startingDeadlineSeconds: 600 # after 100 failure, cj will stop, this limits the window. Requires 100 failures in 600 seconds to stop cj
+  concurrencyPolicy: Forbid # prevents concurrent jobs. (allow-replace options are valid)
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: my-cj
+            image: some-image
+            resources:
+              requests:
+                memory: "128Mi"
+                cpu: "500m"
+              limits:
+                memory: "256Mi"
+                cpu: "1G"
+            env:
+            - name: NODE_ENV
+              value: "production"
+          restartPolicy: Never
+
+
+# https://crontab.guru/#2_9,10,11,21,22,23_*_*_*
