@@ -39,3 +39,9 @@ db.users.find().pretty()
 
 
 db.users.find().pretty()
+
+# diagnostics
+
+BadRequest (400); Substatus: 0; ActivityId: e2159319-7189-4a99-a4b2-321ad4cd1bb8; Reason: (Response status code does not indicate success: BadRequest (400); Substatus: 0; ActivityId: e2159319-7189-4a99-a4b2-321ad4cd1bb8; Reason: (Message: {"Errors":["The index path corresponding to the specified order-by item is excluded."]}
+
+check indexing
