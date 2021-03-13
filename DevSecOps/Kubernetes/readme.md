@@ -310,3 +310,11 @@ spec:
 
 
 # https://crontab.guru/#2_9,10,11,21,22,23_*_*_*
+
+---
+
+# sclae deployment
+
+ kubectl scale --current-replicas=6 --replicas=8 deployment/dep
+
+ # If the deployment named mysql's current size is 2, scale mysql to 3
