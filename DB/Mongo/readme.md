@@ -52,3 +52,6 @@ check indexing
 
 {subDoc: {$size: 2}}
 
+array size greater than n
+
+ 'array.1': {$exists: true },
