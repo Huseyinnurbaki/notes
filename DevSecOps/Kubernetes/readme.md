@@ -318,3 +318,10 @@ spec:
  kubectl scale --current-replicas=6 --replicas=8 deployment/dep
 
  # If the deployment named mysql's current size is 2, scale mysql to 3
+
+ ---
+
+ # rollback deployment 
+```bash
+ kubectl rollout undo deployment <deployment>
+ ```
