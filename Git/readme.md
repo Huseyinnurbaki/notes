@@ -135,3 +135,8 @@ git rev-list --all --count
 # skip pre-commit hooks
 
 git commit -m "git" --no-verify
+
+# delete tag 
+
+git tag -d [tag];
+git push origin :[tag]
