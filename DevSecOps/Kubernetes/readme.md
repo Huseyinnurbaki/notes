@@ -325,3 +325,19 @@ spec:
 ```bash
  kubectl rollout undo deployment <deployment>
  ```
+
+ #  helm rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRole ...
+ helm rendered manifests contain a resource that already exists. Unable to continue with install: ClusterRole "fluentd" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-namespace" must equal "elasticsearch": current value is "elastic"
+
+
+```console
+$ kubectl get clusterrole
+$ kubectl get clusterrolebinding
+```
+
+I.E.
+```console
+k delete rolebinding fluentd
+k delete clusterrolebinding fluentd
+```
+
