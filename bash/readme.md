@@ -255,3 +255,9 @@ $ cat <someJson> | jq
 ```bash
 $ export PATH=$PWD/bin:$PATH
 ```
+
+# zsh 
+zsh: no matches found: -?
+```bash
+unsetopt nomatch
+```
