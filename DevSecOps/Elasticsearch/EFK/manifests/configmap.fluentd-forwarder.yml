@@ -1,0 +1,71 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluentd-forwarder-cm
+  labels:
+    app.kubernetes.io/component: forwarder
+data:
+  fluentd.conf: |
+    # Ignore fluentd own events
+    <match fluent.**>
+      @type null
+    </match>
+
+    # HTTP input for the liveness and readiness probes
+    <source>
+      @type http
+      port 9880
+    </source>
+
+    # Throw the healthcheck to the standard output instead of forwarding it
+    <match fluentd.healthcheck>
+      @type stdout
+    </match>
+
+    # Get the logs from the containers running in the node
+    <source>
+      @type tail
+      path /var/log/containers/*.log
+      # exclude Fluentd logs
+      exclude_path /var/log/containers/*fluentd*.log
+      pos_file /opt/bitnami/fluentd/logs/buffers/fluentd-docker.pos
+      tag kubernetes.*
+      read_from_head true
+      <parse>
+        @type json
+        time_key timestamp
+        time_format %Y-%m-%dT%H:%M:%S.%NZ
+      </parse>
+    </source>
+
+    # Parse log field from our microservices to extract data
+    <filter kubernetes.**ms-test**>
+      @type parser
+      key_name log
+      reserve_data true
+      remove_key_name_field true
+      <parse>
+        @type json
+      </parse>
+    </filter>
+
+    # enrich with kubernetes metadata
+    <filter kubernetes.**>
+      @type kubernetes_metadata
+    </filter>
+
+    # Forward all logs to the aggregators
+    <match **>
+      @type forward
+      <server>
+        host fluentd-aggregator
+        port 24224
+      </server>
+
+      <buffer>
+        @type file
+        path /opt/bitnami/fluentd/logs/buffers/logs.buffer
+        flush_thread_count 2
+        flush_interval 5s
+      </buffer>
+    </match>
