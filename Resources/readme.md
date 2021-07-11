@@ -8,3 +8,7 @@ https://www.youtube.com/watch?v=zHiWqnTWsn4
 
 
 https://www.youtube.com/watch?v=hcRxFRgNpns
+
+## The Principles of Clean Architecture by Uncle Bob Martin
+
+https://www.youtube.com/watch?v=o_TH-Y78tt4
