@@ -1031,3 +1031,86 @@ cd ~/Library/Android/sdk/tools/bin/
 yes to all
 
 https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components
+
+---
+
+# Android Jcenter --> mavenCentral
+
+https://jeroenmols.com/blog/2021/02/04/migratingjcenter/
+
+example
+
+```
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        RNNKotlinVersion = "1.3.61"
+        buildToolsVersion = "29.0.2"
+        minSdkVersion = 21
+        compileSdkVersion = 29
+        targetSdkVersion = 29
+        playServicesVersion = "17.0.0"
+        androidMapsUtilsVersion = "2.0.3"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10"
+        classpath('com.android.tools.build:gradle:4.0.1')
+        classpath 'com.google.gms:google-services:4.3.4'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.3.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url("$rootDir/../node_modules/react-native/android")
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
+         maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+
+        mavenCentral()
+        jcenter() {
+            content {
+                includeModule("com.kaopiz", "kprogresshud")
+                includeModule("com.facebook.yoga", "proguard-annotations")
+                includeModule("com.facebook.fbjni", "fbjni-java-only")
+                includeModule("com.yqritc", "android-scalablevideoview")
+                includeModule("com.tapadoo.android", "alerter")
+                includeModule("com.facebook.flipper", "flipper")
+                includeModule("com.facebook.flipper", "flipper-network-plugin")
+                includeModule("com.facebook.flipper", "flipper-fresco-plugin")
+                includeModule("com.facebook.fresco", "fresco")
+                includeModule("com.facebook.fresco", "fbcore")
+                includeModule("com.facebook.fresco", "drawee")
+                includeModule("com.facebook.fresco", "imagepipeline")
+                includeModule("com.facebook.fresco", "imagepipeline-native")
+                includeModule("com.facebook.fresco", "memory-type-native")
+                includeModule("com.facebook.fresco", "memory-type-java")
+                includeModule("com.facebook.fresco", "nativeimagefilters")
+                includeModule("com.facebook.fresco", "stetho")
+            }
+        }
+        maven { url 'https://www.jitpack.io' }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+```
+
+find unresolved dependencies and include only the inside jcenter
