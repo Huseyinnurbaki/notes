@@ -345,3 +345,8 @@ k delete rolebinding fluentd
 k delete clusterrolebinding fluentd
 ```
 
+----
+
+# cert manager
+kubectl describe certificates
+kubectl describe cr
