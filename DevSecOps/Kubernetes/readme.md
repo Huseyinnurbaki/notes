@@ -354,3 +354,11 @@ kubectl describe cr
 ----
  
  helm get values akhq
+
+---
+
+# localhost https
+
+```
+ngrok http -bind-tls=true localhost:3333
+```
