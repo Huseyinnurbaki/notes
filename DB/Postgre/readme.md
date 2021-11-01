@@ -2,6 +2,7 @@
 
 kubectl run postgresql-postgresql-client --namespace test --image bitnami/postgresql --env POSTGRESQL_PASSWORD=asd 
 
+kubectl exec ...
 
 
 psql -h <host> -U postgres -p 5432
