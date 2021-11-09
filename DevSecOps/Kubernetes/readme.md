@@ -362,3 +362,13 @@ kubectl describe cr
 ```
 ngrok http -bind-tls=true localhost:3333
 ```
+
+---
+
+# Get recently created pod & port-forward note example
+
+export POD_NAME=$(kubectl get pods --namespace logging -l "app.kubernetes.io/name=fluent-bit,app.kubernetes.io/instance=fluent-bit" -o jsonpath="{.items[0].metadata.name}")
+echo "curl http://127.0.0.1:2020 for Fluent Bit build information"
+kubectl --namespace logging port-forward $POD_NAME 2020:2020
+
+
