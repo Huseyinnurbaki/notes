@@ -40,3 +40,6 @@ k port-forward pod/gitlab-webservice-default-1234323 3333:8181
  
 
 
+----
+
+https://git.stuvus.uni-stuttgart.de/ref-it/public-playground/-/blob/gitlab-runner-debug/docs/executors/kubernetes.md
