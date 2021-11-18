@@ -261,3 +261,10 @@ zsh: no matches found: -?
 ```bash
 unsetopt nomatch
 ```
+
+---
+
+# check storage
+```bash
+ df -h
+```
