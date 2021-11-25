@@ -268,3 +268,9 @@ unsetopt nomatch
 ```bash
  df -h
 ```
+
+# check if installed
+
+if [ ! "$(command -v girror)" ]; then
+    echo "Please install girror from https://github.com/Huseyinnurbaki/homebrew-girror"
+fi
