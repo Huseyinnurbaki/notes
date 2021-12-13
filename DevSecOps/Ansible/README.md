@@ -18,3 +18,31 @@ ansible-playbook playbooks/asd.yml --private-key=/key.cer  --become
 ```
  
 --become --> resolves permission denied
+
+---
+
+# remote_src: true
+
+remote_src: true uses remote directory.
+```
+---
+- name: docker compose playbook
+  hosts: all
+  tasks:
+  - name: copy Docker Compose files
+    copy:
+      src: "deployments/"
+      dest: tmp/
+      remote_src: true
+    become: true
+  - name: deploy Docker Compose stack
+    docker_compose:
+      project_src: tmp/
+      state: present
+    register: __docker_compose
+
+  - name: debug
+    debug:
+      var: __docker_compose
+
+```
