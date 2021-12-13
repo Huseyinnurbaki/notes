@@ -8,6 +8,9 @@ kubectl exec ...
 psql -h <host> -U postgres -p 5432
 
 
+psql -h postgre-postgresql -U postgres -p 5432
+
+
 
 CREATE DATABASE myapp;
 CREATE USER myappadmin WITH ENCRYPTED PASSWORD '123';

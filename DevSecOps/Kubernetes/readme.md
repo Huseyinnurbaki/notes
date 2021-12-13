@@ -249,7 +249,7 @@ kubectl patch svc some-svc -p '{"spec":{"externalIPs":[x.x.x.x"]}}'
 ```
 # decode secret with - (U+002D)
 ```bash
-~ $ kubectl get secrets/dev-postgresql  --template='{{index .data "postgresql-postgres-password"}}' | base64 -D
+~ $ kubectl get secrets/postgre-postgresql  --template='{{index .data "postgresql-password"}}' | base64 -D
 ```
 
 ----
