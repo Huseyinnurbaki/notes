@@ -133,3 +133,5 @@ Preferences > Resources > Advanced > Disk Image Location
 Delete Docker.raw, restart Docker for Mac
 
 https://stackoverflow.com/questions/30604846/docker-error-no-space-left-on-device
+
+---
