@@ -372,3 +372,7 @@ echo "curl http://127.0.0.1:2020 for Fluent Bit build information"
 kubectl --namespace logging port-forward $POD_NAME 2020:2020
 
 
+### K8s upgrade notes
+
+Upgrading k8s versions of  4 x 2X nodes are easier compared to 8 x 1X
+
