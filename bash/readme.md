@@ -274,3 +274,12 @@ unsetopt nomatch
 if [ ! "$(command -v girror)" ]; then
     echo "Please install girror from https://github.com/Huseyinnurbaki/homebrew-girror"
 fi
+
+
+---
+
+## lookup dns authority
+
+nslookup -type=SOA <domain>
+
+
