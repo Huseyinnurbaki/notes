@@ -9,7 +9,7 @@ https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets
 # create tls secret k8s
 
 
-kubectl create secret tls tiklagelsin-tls \
+kubectl create secret tls nameof-tls \
   --cert=path_to.crt \
   --key=path_to_unencrypted.pfx
 
@@ -17,7 +17,7 @@ kubectl create secret tls tiklagelsin-tls \
 
 openssl x509 -in cert.pem -noout -pubkey
 
-openssl rsa -in tiklagelsindecrypted.key -pubout
+openssl rsa -in some.key -pubout
 
 
 output should match each other

@@ -375,4 +375,6 @@ kubectl --namespace logging port-forward $POD_NAME 2020:2020
 ### K8s upgrade notes
 
 Upgrading k8s versions of  4 x 2X nodes are easier compared to 8 x 1X
+Azure upgrades deprecated apis/yamls
+
 
