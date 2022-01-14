@@ -135,3 +135,35 @@ Delete Docker.raw, restart Docker for Mac
 https://stackoverflow.com/questions/30604846/docker-error-no-space-left-on-device
 
 ---
+## How to 'docker exec' a container built from scratch?
+
+If your scratch container is running you can copy a shell (and other needed utils) into its filesystem and then exec it. The shell would need to be a static binary. Busybox is a great choice here because it can double as so many other binaries.
+
+Full example:
+
+# Assumes scratch container is last launched one, else replace with container ID of
+# scratch image, e.g. from `docker ps`, for example:
+# scratch_container_id=401b31621b36
+scratch_container_id=$(docker ps -ql)
+
+docker run -d busybox:latest sleep 100
+busybox_container_id=$(docker ps -ql)
+docker cp "$busybox_container_id":/bin/busybox .
+
+# The busybox binary will become whatever you name it (or the first arg you pass to it), for more info run:
+# docker run busybox:latest /bin/busybox
+# The `busybox --install` command copies the binary with different names into a directory.
+
+docker cp ./busybox "$scratch_container_id":/busybox
+
+docker exec -it "$scratch_container_id" /busybox sh -c '
+export PATH="/busybin:$PATH"
+/busybox mkdir /busybin
+/busybox --install /busybin
+sh'
+For Kubernetes I think Ephemeral Containers provide or will provide equivalent functionality.
+
+References: distroless java docker image error https://github.com/GoogleContainerTools/distroless/issues/168#issuecomment-371077961
+
+
+src: https://stackoverflow.com/questions/54720824/how-to-docker-exec-a-container-built-from-scratch
