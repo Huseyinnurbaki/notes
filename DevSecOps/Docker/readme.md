@@ -167,3 +167,13 @@ References: distroless java docker image error https://github.com/GoogleContaine
 
 
 src: https://stackoverflow.com/questions/54720824/how-to-docker-exec-a-container-built-from-scratch
+
+---
+
+### docker import 
+
+GOOS=linux go build -o ./bin/app
+
+tar cvf example.tar bin
+
+docker import example.tar --change 'ENTRYPOINT ["/bin/app"]' examplehus
