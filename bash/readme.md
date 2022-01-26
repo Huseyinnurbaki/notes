@@ -283,3 +283,8 @@ fi
 nslookup -type=SOA <domain>
 
 
+## base64 encode decode file 
+
+openssl base64 -in <infile> -out <outfile>
+
+openssl base64 -d -in <infile> -out <outfile>
