@@ -224,6 +224,11 @@ $ printenv
 
 1.18
 kubectl get secret <secret-name> --namespace=<source-ns> -o yaml | sed 's/namespace: <source-ns>/namespace: <destination-ns>/g' | kubectl create -f -  
+
+1.22
+
+kubectl get secret redis-pwd --namespace=redis -o yaml | sed 's/namespace: .*/namespace: tmpns/' | kubectl apply -f -
+
 # create secret
 
 kubectl create secret  generic some-secret \

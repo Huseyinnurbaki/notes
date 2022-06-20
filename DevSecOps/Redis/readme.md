@@ -50,3 +50,9 @@ spec:
 # Docker run redis
 
 docker run -d  -p 6379:6379 redis
+
+---
+
+set master
+
+https://stackoverflow.com/questions/34155977/redis-promoting-a-slave-to-master-manually
