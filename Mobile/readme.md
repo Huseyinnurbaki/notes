@@ -1179,3 +1179,8 @@ allprojects {
         }
     }
 }
+
+---
+# npm peer dependencies
+
+https://www.reddit.com/r/reactjs/comments/mryis8/how_to_solve_peer_dependencies_error_after/
