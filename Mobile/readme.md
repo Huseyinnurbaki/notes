@@ -1184,3 +1184,12 @@ allprojects {
 # npm peer dependencies
 
 https://www.reddit.com/r/reactjs/comments/mryis8/how_to_solve_peer_dependencies_error_after/
+
+---
+
+# android firebase signign 
+DEVELOPER ERROR
+
+This happens if the fingerprint is wrong
+
+./gradlew signingReport -> this will dump the correct one to the terminal
