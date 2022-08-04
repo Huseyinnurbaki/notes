@@ -1193,3 +1193,5 @@ DEVELOPER ERROR
 This happens if the fingerprint is wrong
 
 ./gradlew signingReport -> this will dump the correct one to the terminal
+
+https://stackoverflow.com/questions/54417232/react-native-google-signin-gives-developer-error
