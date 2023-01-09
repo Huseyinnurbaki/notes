@@ -288,3 +288,19 @@ nslookup -type=SOA <domain>
 openssl base64 -in <infile> -out <outfile>
 
 openssl base64 -d -in <infile> -out <outfile>
+---
+
+
+pass a var with string and extra vars
+
+function test() {
+    echo $1
+}
+TABLE_NAME=users
+
+
+QUERY="select ${STH} from ${TABLE_NAME} where ID::text = $SOME_ID"
+
+
+test "$QUERY" -> "" does the magic, otherwise echo will prompt <select >
+
